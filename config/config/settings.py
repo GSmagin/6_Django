@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+import configparser
 import os
 from pathlib import Path
 
@@ -20,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jt!j#c0=^p-6-h1k$8+-b4_8%&@aq-cp0ku!*4g*5jgkm3c3on'
+SECRET_KEY = 'django-insecure-pzxits$*a%$0oz(8p)=mwcuekd+74o!9n!@3w3sd5%b28k54(='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'newsletter.apps.CatalogConfig',
+    'newsletter.apps.NewsletterConfig',
 ]
 
 MIDDLEWARE = [
@@ -105,9 +106,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = 'ru-ru'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'Europe/Moscow'
+
 
 USE_I18N = True
 
@@ -129,4 +131,4 @@ STATICFILES_DIRS = (
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')

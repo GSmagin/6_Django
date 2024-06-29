@@ -16,6 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from newsletter.apps import NewsletterConfig
+
+app_name = NewsletterConfig.name
 
 urlpatterns = [
     path('admin/', admin.site.urls),
