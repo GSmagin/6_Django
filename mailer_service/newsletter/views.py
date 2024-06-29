@@ -8,6 +8,6 @@ from django.views.generic import TemplateView
 class IndexView(TemplateView):
     """Контроллер просмотра домашней страницы"""
     template_name = 'index.html'
-    success_url = reverse_lazy('newsletter:index')
+    success_url = reverse_lazy('newsletter:main')
 
 

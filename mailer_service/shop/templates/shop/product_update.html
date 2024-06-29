@@ -1,0 +1,14 @@
+<!-- templates/catalog/product_update.html -->
+{% extends 'main/index.html' %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center calc">
+        <h2>Изменить продукт</h2>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+<!-- templates/catalog/product_create.html -->
+{% extends 'main/index.html' %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center calc">
+        {% if object.id %}
+            <h2>Изменить продукт</h2>
+        {% else %}
+            <h2>Создать продукт</h2>
+        {% endif  %}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </form>
+    </div>
+</div>
+{% endblock %}

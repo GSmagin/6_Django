@@ -1,0 +1,37 @@
+{% extends 'main/index.html' %}
+ {% block center %}
+     <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'blog:blogpost_create' %}">Создать пост</a>
+ {% endblock %}
+{% block content %}
+    {% if object_list %}
+        <div class="row mb-2">
+        {% for blog in object_list %}
+            {% if blog.is_published %}
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+<!--                        <strong class="d-inline-block mb-2 text-success">Design</strong> -->
+                        <strong class="d-inline-block mb-0 text-success" style="font-size: 0.7em;">Просмотров: {{ blog.views_count }}</strong>
+                        <h4 class="mb-0">{{ blog.title }}</h4>
+                        <div class="mb-1 text-muted">Создано: {{ blog.created_at|timesince }}</div>
+                        <p class="mb-auto">{{ blog.content|truncatewords:20 }}</p>
+                        <a href="{% url 'blog:blogpost_detail' blog.pk %}" class="stretched-link">Читать далее...</a>
+                    </div>
+                    <div class="col-auto l-none l-lg-block">
+                    {% if blog.preview_image %}
+                        <img class="bd-placeholder-img" width="200" height="230" src="{{ blog.preview_image.url }}">
+                    {% else %}
+                        <img class="bd-placeholder-img" width="200" height="230" src="/media/no_foto.jpg">
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <div class="text-center" style="font-size: 1.5rem; font-weight: bold;">
+            Нет ни единого поста
+        </div>
+    {% endif %}
+    </div>
+{% endblock %}

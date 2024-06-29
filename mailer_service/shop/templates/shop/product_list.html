@@ -1,0 +1,67 @@
+<!-- templates/shop/product_list.html -->
+{% extends 'main/index.html' %}
+ {% block center %}
+     <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'shop:product_create' %}">Создать продукт</a>
+ {% endblock %}
+{% load my_tags %}
+{% block content %}
+<div class="row text-center">
+    {% for product in object_list %}
+        <div class="p-1 col-4">
+            <div class="card mx-auto">
+                <div class="card-header div-fixed-size">
+                    <img src="{{ product.image | media_files }}" class="img-fluid" style="height: 300px;">
+                </div>
+                <div class="card-body">
+                    <ul class="mt-2 mb-2 text-start">
+<!--                       <li>Продукт: {{ product.name | slice:":30" }}</li>-->
+                        <li>Продукт: {{ product.name | truncate_chars:30 }}</li>
+                        <li>Категория: {{ product.category.name | truncate_chars:30 }}</li>
+                        <li>Вес: {{ product.weight }}</li>
+                        <li>Цена: {{ product.price }} ₽</li>
+                    </ul>
+                    <button class="btn btn-xs btn-block btn-outline-primary">Купить</button>
+                    <a class="btn btn-xs btn-block btn-outline-primary" href="{% url 'shop:product_detail' product.pk %}">Подробно</a>
+                    <a class="btn btn-xs btn-block btn-outline-primary" href="{% url 'shop:product_update' product.pk %}">Изменить</a>
+                    <a class="btn btn-xs btn-block btn-outline-primary" href="{% url 'shop:product_delete' product.pk %}">Удалить</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- Пагинация -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        {% if page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page=1">Первый</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Предыдущий</a>
+            </li>
+        {% endif %}
+
+        {% for num in page_obj.paginator.page_range %}
+            {% if page_obj.number == num %}
+                <li class="page-item active">
+                    <span class="page-link">{{ num }}</span>
+                </li>
+            {% elif num > page_obj.number|add:-3 and num < page_obj.number|add:3 %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+        {% if page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.next_page_number }}">Следующий</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Последний</a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endblock %}
