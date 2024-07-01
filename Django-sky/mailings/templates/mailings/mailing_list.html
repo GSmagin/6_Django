@@ -15,14 +15,14 @@
             <div class="col-12 text-center">
                 <table class="table">
                     <tr>
-                        <th><h5>Дата начала рассылки</h5></th>
-                        <th><h5>Дата окончания рассылки</h5></th>
-                        <th><h5>Периодичность рассылки</h5></th>
-                        <th><h5>Статус рассылки</h5></th>
-                        <th><h5>Тема</h5></th>
-                        <th><h5>Посмотреть рассылку</h5></th>
-                        <th><h5>Редактировать рассылку</h5></th>
-                        <th><h5>Удалить рассылку</h5></th>
+                        <th><h6>Дата начала рассылки</h6></th>
+                        <th><h6>Дата окончания рассылки</h6></th>
+                        <th><h6>Периодичность рассылки</h6></th>
+                        <th><h6>Статус рассылки</h6></th>
+                        <th><h6>Тема</h6></th>
+                        <th><h6>Посмотреть рассылку</h6></th>
+                        <th><h6>Редактировать рассылку</h6></th>
+                        <th><h6>Удалить рассылку</h6></th>
                     </tr>
                     {% for object in object_list %}
                     <tr>
@@ -30,17 +30,17 @@
                         <td><h6>{{ object.stop_datetime}}</h6></td>
                         <td><h6>{{ object.get_periodicity_display }}</h6></td>
                         <td><h6>{{ object.get_status_display }}</h6></td>
-                        <td><h6>{{ object.title }}</h6></td>
+                        <td><h6>{{ object.body }}</h6></td>
                         <td><h6>
-                            <a class="btn btn-lg btn-primary"
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
                                href="{% url 'mailings:mailing_detail' object.pk %}">Просмотр</a>
                         </h6></td>
                         <td><h6>
-                            <a class="btn btn-lg btn-warning"
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
                                href="{% url 'mailings:mailing_edit' object.pk %}">Редактирование</a>
                         </h6></td>
                         <td><h6>
-                            <a class="btn btn-lg btn-danger"
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
                                href="{% url 'mailings:mailing_delete' object.pk %}">Удаление</a>
                         </h6></td>
                     {% endfor %}
@@ -51,7 +51,7 @@
     </div>
     <div class="row text-right mt-4">
         <div class="col-12">
-            <a class="btn btn-secondary my-2" href="{% url 'mailings:mailing_create' %}">Создать рассылку</a>
+            <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'mailings:mailing_create' %}">Создать рассылку</a>
         </div>
     </div>
 </div>

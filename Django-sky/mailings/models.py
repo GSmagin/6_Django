@@ -19,6 +19,14 @@ class Client(models.Model):
 
 
 class Mailing(models.Model):
+    daily = 'Раз в день'
+    weekly = 'Раз в неделю'
+    monthly = 'Раз в месяц'
+
+    created = 'Создана'
+    started = 'Запущена'
+    finished = 'Завершена'
+
     PERIODICITY_CHOICES = [
         ('daily', 'Раз в день'),
         ('weekly', 'Раз в неделю'),
@@ -35,6 +43,9 @@ class Mailing(models.Model):
     stop_datetime = models.DateTimeField(default=now, verbose_name="Дата окончания рассылки")
     periodicity = models.CharField(max_length=10, choices=PERIODICITY_CHOICES, verbose_name="Периодичность")
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='created', verbose_name="Статус рассылки")
+    subject = models.CharField(max_length=255, verbose_name="Тема письма")
+    body = models.TextField(verbose_name="Текст письма")
+    client = models.ManyToManyField(Client, verbose_name='клиент')
 
     def __str__(self):
         return f"Рассылка {self.id} - {self.get_status_display()}"
@@ -44,16 +55,16 @@ class Mailing(models.Model):
         verbose_name_plural = 'Рассылки'
 
 
-class Message(models.Model):
-    subject = models.CharField(max_length=255, verbose_name="Тема письма")
-    body = models.TextField(verbose_name="Текст письма")
-
-    def __str__(self):
-        return self.subject
-
-    class Meta:
-        verbose_name = 'Письмо'
-        verbose_name_plural = 'Письма'
+# class Message(models.Model):
+#     subject = models.CharField(max_length=255, verbose_name="Тема письма")
+#     body = models.TextField(verbose_name="Текст письма")
+#
+#     def __str__(self):
+#         return self.subject
+#
+#     class Meta:
+#         verbose_name = 'Письмо'
+#         verbose_name_plural = 'Письма'
 
 
 class Attempt(models.Model):
@@ -69,3 +80,7 @@ class Attempt(models.Model):
     class Meta:
         verbose_name = 'Попытка'
         verbose_name_plural = 'Попытки'
+
+
+
+

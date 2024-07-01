@@ -1,7 +1,8 @@
+from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .models import Client, Mailing, Attempt
-from .forms import ClientForm, MailingForm
+from .models import Client, Mailing
+from .forms import ClientForm, MailingForm, CombinedMailingForm
 from django import forms
 
 
@@ -51,13 +52,13 @@ class MailingDetailView(DetailView):
     model = Mailing
 #    form_class = MailingForm
     template_name = 'mailings/mailing_detail.html'
-    context_object_name = 'mailing_detail'
+#    context_object_name = 'mailing_detail'
 
 
 class MailingCreateView(CreateView):
     model = Mailing
-    form_class = MailingForm
-#    fields = ('start_datetime', 'stop_datetime', 'periodicity', 'status')
+#    form_class = MailingForm
+    fields = ('start_datetime', 'stop_datetime', 'periodicity', 'status', 'subject', 'body', 'client')
     template_name = 'mailings/mailing_form.html'
     success_url = reverse_lazy('mailings:mailing_list')
 
@@ -65,7 +66,7 @@ class MailingCreateView(CreateView):
 class MailingUpdateView(UpdateView):
     model = Mailing
 #    form_class = MailingForm
-    fields = ('start_datetime', 'stop_datetime', 'periodicity', 'status')
+    fields = ('start_datetime', 'stop_datetime', 'periodicity', 'status', 'subject', 'body', 'client')
     template_name = 'mailings/mailing_form.html'
     success_url = reverse_lazy('mailings:mailing_list')
 
@@ -75,3 +76,4 @@ class MailingDeleteView(DeleteView):
 #    form_class = MailingForm
     template_name = 'mailings/mailing_confirm_delete.html'
     success_url = reverse_lazy('mailings:mailing_list')
+

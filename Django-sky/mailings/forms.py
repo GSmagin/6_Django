@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.admin.widgets import AdminDateWidget
 
-from .models import Client, Mailing, Message
+from .models import Client, Mailing
 
 
 class DateInput(forms.DateInput):
@@ -24,7 +24,11 @@ class MailingForm(forms.ModelForm):
         fields = ['start_datetime', 'stop_datetime', 'periodicity', 'status']
 
 
-class MessageForm(forms.ModelForm):
-    class Meta:
-        model = Message
-        fields = ['subject', 'body']
+
+class CombinedMailingForm(forms.Form):
+    start_datetime = forms.DateField(widget=DateInput)
+    stop_datetime = forms.DateField(widget=DateInput)
+    periodicity = forms.ChoiceField(choices=Mailing.PERIODICITY_CHOICES)
+    status = forms.ChoiceField(choices=Mailing.STATUS_CHOICES)
+    subject = forms.CharField(max_length=100)
+    body = forms.CharField(widget=forms.Textarea)
