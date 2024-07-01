@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mailings.apps.MailingsConfig',
     'main.apps.MainConfig',
-    'newsletter.apps.NewsletterConfig',
     'blog.apps.BlogConfig',
     'shop.apps.ShopConfig',
 ]
@@ -112,6 +112,23 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# APScheduler configuration
+SCHEDULER_CONFIG = {
+    'apscheduler.jobstores.default': {
+        'type': 'django_apscheduler.jobstores:DjangoJobStore'
+    },
+    'apscheduler.executors.default': {
+        'class': 'apscheduler.executors.pool:ThreadPoolExecutor',
+        'max_workers': 20
+    },
+    'apscheduler.executors.processpool': {
+        'class': 'apscheduler.executors.pool:ProcessPoolExecutor',
+        'max_workers': 5
+    },
+    'apscheduler.job_defaults.coalesce': False,
+    'apscheduler.job_defaults.max_instances': 1,
+    'apscheduler.timezone': 'UTC',
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

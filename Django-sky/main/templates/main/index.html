@@ -21,7 +21,8 @@
         <a class="p-2 btn btn-outline-primary" href="/admin">Админка</a>
         <a class="p-2 btn btn-outline-primary" href="{% url 'shop:product_list' %}">Магазин</a>
         <a class="p-2 btn btn-outline-primary" href="{% url 'blog:blogpost_list' %}">Блог</a>
-        <a class="p-2 btn btn-outline-primary" href="">Рассылка</a>
+        <a class="p-2 btn btn-outline-primary" href="{% url 'mailings:client_list' %}">Рассылка К</a>
+        <a class="p-2 btn btn-outline-primary" href="{% url 'mailings:mailing_list' %}">Рассылка М</a>
     </nav>
 </div>
 

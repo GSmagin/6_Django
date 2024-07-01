@@ -1,5 +1,8 @@
 from django.db import models
 from django.utils import timezone
+from django.utils.timezone import now
+
+NULLABLE = {'null': True, 'blank': True}
 
 
 class Client(models.Model):
@@ -28,12 +31,13 @@ class Mailing(models.Model):
         ('finished', 'Завершена'),
     ]
 
-    first_send_date = models.DateTimeField(default=timezone.now, verbose_name="Дата создания")
+    start_datetime = models.DateTimeField(default=now, verbose_name="Дата создания")
+    stop_datetime = models.DateTimeField(default=now, verbose_name="Дата окончания рассылки")
     periodicity = models.CharField(max_length=10, choices=PERIODICITY_CHOICES, verbose_name="Периодичность")
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='created', verbose_name="Статус рассылки")
 
     def __str__(self):
-        return f"Mailing {self.id} - {self.get_status_display()}"
+        return f"Рассылка {self.id} - {self.get_status_display()}"
 
     class Meta:
         verbose_name = 'Рассылка'
@@ -52,7 +56,7 @@ class Message(models.Model):
         verbose_name_plural = 'Письма'
 
 
-class MailingAttempt(models.Model):
+class Attempt(models.Model):
     mailing = models.ForeignKey(Mailing, on_delete=models.CASCADE)
     client = models.ForeignKey(Client, on_delete=models.CASCADE)
     attempt_date = models.DateTimeField(default=timezone.now, verbose_name="Дата попытки")
@@ -60,7 +64,7 @@ class MailingAttempt(models.Model):
     server_response = models.TextField(blank=True, null=True, verbose_name="Ответ сервера")
 
     def __str__(self):
-        return f"Attempt for {self.mailing.id} to {self.client.email} at {self.attempt_date}"
+        return f"Попытка {self.mailing.id} to {self.client.email} at {self.attempt_date}"
 
     class Meta:
         verbose_name = 'Попытка'

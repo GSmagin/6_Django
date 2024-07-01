@@ -1,0 +1,8 @@
+{% extends 'main/index.html' %}
+
+{% block content %}
+<h2>{{ client.full_name }}</h2>
+<p>Email: {{ client.email }}</p>
+<p>Comment: {{ client.comment }}</p>
+<a href="{% url 'mailings:client_list' %}">Back to list</a>
+{% endblock %}
