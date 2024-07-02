@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Django-sky</title>
     <link href="{% static 'css/bootstrap.min.css'  %}" rel="stylesheet">
-    <link href="{% static 'css/custom.css' %}">
     <style>
         body {
             padding-top: 60px; /* Adjust based on the height of your navbar */
@@ -21,8 +20,12 @@
         <a class="p-2 btn btn-outline-primary" href="/admin">Админка</a>
         <a class="p-2 btn btn-outline-primary" href="{% url 'shop:product_list' %}">Магазин</a>
         <a class="p-2 btn btn-outline-primary" href="{% url 'blog:blogpost_list' %}">Блог</a>
-        <a class="p-2 btn btn-outline-primary" href="{% url 'mailings:client_list' %}">Рассылка К</a>
-        <a class="p-2 btn btn-outline-primary" href="{% url 'mailings:mailing_list' %}">Рассылка М</a>
+        <a class="p-2 btn btn-outline-primary" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Рассылка</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="{% url 'mailings:client_list' %}">Страница клиентов</a>
+                <a class="dropdown-item" href="{% url 'mailings:mailing_list' %}">Страница рассылок</a>
+            </ul>
     </nav>
 </div>
 

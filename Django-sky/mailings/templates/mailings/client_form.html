@@ -9,13 +9,13 @@
                         <form method='post'>
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <button type="submit" class="btn btn-xs btn-block btn-outline-primary">
                                 {% if object %}
-                                    Сохранить
+                                    <button type="submit" class="btn btn-xs btn-block btn-outline-primary">Сохранить</button>
+                                    <a href="{% url 'mailings:client_list' %}" class="btn btn-xs btn-block btn-outline-primary">Назад</a>
                                 {% else %}
-                                    Создать
+                                    <button type="submit" class="btn btn-xs btn-block btn-outline-primary">Создать</button>
+                                    <a href="{% url 'mailings:client_list' %}" class="btn btn-xs btn-block btn-outline-primary">Назад</a>
                                 {% endif %}
-                            </button>
                          </form>
                     </div>
                 </div>
@@ -23,3 +23,4 @@
         </div>
     </div>
 {% endblock %}
+

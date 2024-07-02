@@ -6,7 +6,7 @@
 {% endblock %}
 {% load my_tags %}
 {% block content %}
-{% if blog.is_published %}
+{% if object_list %}
     <div class="row text-center">
         {% for product in object_list %}
             <div class="p-1 col-4">
@@ -38,7 +38,7 @@
     <h4 class="text-center my-0 mr-md-auto font-weight-normal">Нет ни единого продукта</h4>
     {% endif %}
     <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'shop:product_create' %}">Создать продукт</a>
-    
+
 
     <!-- Пагинация -->
     <nav aria-label="Page navigation example">
@@ -74,5 +74,5 @@
             {% endif %}
         </ul>
     </nav>
-    
+
 {% endblock %}

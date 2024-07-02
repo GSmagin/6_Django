@@ -1,7 +1,7 @@
 from django_apscheduler.jobstores import DjangoJobStore
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
-from newapp.utils import print_time_job
+from mailings.utils import print_time_job
 
 
 def start():

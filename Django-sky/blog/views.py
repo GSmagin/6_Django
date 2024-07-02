@@ -28,7 +28,7 @@ class BlogListView(ListView):
     model = Blog
     template_name = 'blog/blogpost_list.html'
     context_object_name = 'blog'
-    paginate_by = 10
+    paginate_by = 4
 
     def get_queryset(self):
         return Blog.objects.filter(is_published=True)
