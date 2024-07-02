@@ -5,3 +5,13 @@ class MailingsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'mailings'
     verbose_name = "Рассылки"
+
+    # def ready(self):
+    #     from mailings.commands.runapscheduler import send_mails
+    #     send_mails()
+
+    def ready(self):
+        import mailings.commands.signals
+
+
+

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'blog.apps.BlogConfig',
     'shop.apps.ShopConfig',
+    'django_apscheduler',
 ]
 
 MIDDLEWARE = [

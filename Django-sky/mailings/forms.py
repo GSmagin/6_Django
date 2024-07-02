@@ -21,14 +21,6 @@ class MailingForm(forms.ModelForm):
 
     class Meta:
         model = Mailing
-        fields = ['start_datetime', 'stop_datetime', 'periodicity', 'status']
+        fields = ['start_datetime', 'stop_datetime', 'periodicity', 'status', 'subject', 'body', 'client']
 
 
-
-class CombinedMailingForm(forms.Form):
-    start_datetime = forms.DateField(widget=DateInput)
-    stop_datetime = forms.DateField(widget=DateInput)
-    periodicity = forms.ChoiceField(choices=Mailing.PERIODICITY_CHOICES)
-    status = forms.ChoiceField(choices=Mailing.STATUS_CHOICES)
-    subject = forms.CharField(max_length=100)
-    body = forms.CharField(widget=forms.Textarea)

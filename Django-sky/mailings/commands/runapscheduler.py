@@ -1,32 +1,17 @@
-import logging
-
-from django.conf import settings
-
+from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
-from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.cron import CronTrigger
-from django.core.management.base import BaseCommand
+from django.conf import settings
+from django.core.management import BaseCommand
+from django_apscheduler import util
 from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
-from django_apscheduler import util
-from mailings.utils import print_time_job
 
-logger = logging.getLogger(__name__)
+from mailings.utils import send_mails
 
 
-# The `close_old_connections` decorator ensures that database connections, that have become
-# unusable or are obsolete, are closed before and after your job has run. You should use it
-# to wrap any jobs that you schedule that access the Django database in any way. 
 @util.close_old_connections
 def delete_old_job_executions(max_age=604_800):
-    """
-    This job deletes APScheduler job execution entries older than `max_age` from the database.
-    It helps to prevent the database from filling up with old historical records that are no
-    longer useful.
-
-    :param max_age: The maximum length of time to retain historical job execution records.
-                    Defaults to 7 days.
-    """
     DjangoJobExecution.objects.delete_old_job_executions(max_age)
 
 
@@ -38,18 +23,19 @@ class Command(BaseCommand):
         scheduler.add_jobstore(DjangoJobStore(), "default")
 
         scheduler.add_job(
-            print_time_job,
-            trigger=IntervalTrigger(seconds=10),
-            id="my_job",  # The `id` assigned to each job MUST be unique
-            max_instances=1,
+            send_mails,
+            trigger=CronTrigger(second="*/30"),
+            id="sendmail",
+            max_instances=10,
             replace_existing=True,
         )
-        logger.info("Added job 'my_job'.")
 
         try:
-            logger.info("Starting scheduler...")
+            print("Start scheduler")
             scheduler.start()
+
         except KeyboardInterrupt:
-            logger.info("Stopping scheduler...")
+            print("Stop scheduler")
             scheduler.shutdown()
-            logger.info("Scheduler shut down successfully!")
+            print("Exit")
+
