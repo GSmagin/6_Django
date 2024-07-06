@@ -1,0 +1,11 @@
+{% extends 'main/index.html' %}
+
+{% block content %}
+<h2>Mailing {{ object.title }}</h2>
+<p>Status: {{ object.get_status_display }}</p>
+<p class="card-text">Комментарий: {{ object.comment }}</p>
+<p>Дата создания рассылки: {{ object.start_datetime }}</p>
+<p>Дата окончания рассылки: {{ object.stop_datetime }}</p>
+<p>Периодичность: {{ object.get_periodicity_display }}</p>
+<a href="{% url 'mailings:mailing_list' %}">Back to list</a>
+{% endblock %}

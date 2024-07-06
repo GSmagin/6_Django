@@ -1,0 +1,28 @@
+{% extends 'main/index.html' %}
+{% load crispy_forms_filters %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Изменить продукт</h2>
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+            <a href="{% url 'shop:product_list' %}" class="btn btn-secondary mt-3">Назад</a>
+        </div>
+        <div class="col-md-6" style="max-height: 800px; overflow-y: auto;">
+            <h3>Версии продукта</h3>
+            {{ formset.management_form }}
+            {{ formset.non_form_errors }}
+            <div class="list-group">
+                {% for form in formset %}
+                <div class="list-group-item">
+                    {{ form.as_p }}
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Сохранить</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

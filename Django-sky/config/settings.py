@@ -13,6 +13,9 @@ import configparser
 import os
 from pathlib import Path
 
+config = configparser.ConfigParser()
+config.read('venv/config.ini')
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +29,7 @@ SECRET_KEY = 'django-insecure-pzxits$*a%$0oz(8p)=mwcuekd+74o!9n!@3w3sd5%b28k54(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,8 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'newsletter.apps.NewsletterConfig',
+    'mailings.apps.MailingsConfig',
+    'main.apps.MainConfig',
+    'blog.apps.BlogConfig',
+    'shop.apps.ShopConfig',
+    'django_apscheduler',
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -78,11 +86,14 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db_django2', # Название БД
+        'USER': 'postgres', # Пользователь для подключения
+        'PASSWORD': '', # Пароль для этого пользователя
+        'HOST': '127.0.0.1', # Адрес, на котором развернут сервер БД
+        'PORT': 5432, # Порт, на котором работает сервер БД
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -102,6 +113,23 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# APScheduler configuration
+SCHEDULER_CONFIG = {
+    'apscheduler.jobstores.default': {
+        'type': 'django_apscheduler.jobstores:DjangoJobStore'
+    },
+    'apscheduler.executors.default': {
+        'class': 'apscheduler.executors.pool:ThreadPoolExecutor',
+        'max_workers': 20
+    },
+    'apscheduler.executors.processpool': {
+        'class': 'apscheduler.executors.pool:ProcessPoolExecutor',
+        'max_workers': 5
+    },
+    'apscheduler.job_defaults.coalesce': False,
+    'apscheduler.job_defaults.max_instances': 1,
+    'apscheduler.timezone': 'UTC',
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
@@ -115,11 +143,13 @@ USE_I18N = True
 
 USE_TZ = True
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     BASE_DIR / 'static',
@@ -130,5 +160,35 @@ STATICFILES_DIRS = (
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
+
+APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
+
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '../../media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+CRONJOBS = [
+    ('*/5 * * * *', 'mailings.utils.print_time_job', f'>> {BASE_DIR}/scheduled_job.log')
+]
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#         },
+#     },
+#     'root': {
+#         'handlers': ['console'],
+#         'level': 'DEBUG',
+#     },
+#     'loggers': {
+#         'django': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': True,
+#         },
+#     },
+# }

@@ -1,0 +1,58 @@
+{% extends 'main/index.html' %}
+
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h5 class="display-6">Страница рассылок</h5>
+</div>
+
+
+<div class="container col-10">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Рассылки</h5>
+        </div>
+        <div class="card-body">
+            <div class="col-12 text-center">
+                <table class="table">
+                    <tr>
+                        <th><h6>Дата начала рассылки</h6></th>
+                        <th><h6>Дата окончания рассылки</h6></th>
+                        <th><h6>Периодичность рассылки</h6></th>
+                        <th><h6>Статус рассылки</h6></th>
+                        <th><h6>Тема</h6></th>
+                        <th><h6>Посмотреть рассылку</h6></th>
+                        <th><h6>Редактировать рассылку</h6></th>
+                        <th><h6>Удалить рассылку</h6></th>
+                    </tr>
+                    {% for object in object_list %}
+                    <tr>
+                        <td><h6>{{ object.start_datetime}}</h6></td>
+                        <td><h6>{{ object.stop_datetime}}</h6></td>
+                        <td><h6>{{ object.get_periodicity_display }}</h6></td>
+                        <td><h6>{{ object.get_status_display }}</h6></td>
+                        <td><h6>{{ object.body }}</h6></td>
+                        <td><h6>
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
+                               href="{% url 'mailings:mailing_detail' object.pk %}">Просмотр</a>
+                        </h6></td>
+                        <td><h6>
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
+                               href="{% url 'mailings:mailing_edit' object.pk %}">Редактирование</a>
+                        </h6></td>
+                        <td><h6>
+                            <a class="p-2 mb-4 mt-2 btn btn-outline-primary"
+                               href="{% url 'mailings:mailing_delete' object.pk %}">Удаление</a>
+                        </h6></td>
+                    {% endfor %}
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row text-right mt-4">
+        <div class="col-12">
+            <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'mailings:mailing_create' %}">Создать рассылку</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

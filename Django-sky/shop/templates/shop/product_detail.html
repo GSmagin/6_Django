@@ -1,0 +1,22 @@
+<!-- templates/catalog/product_detail.html -->
+{% extends 'main/index.html' %}
+{% load my_tags %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{ product.image | media_files }}" class="img-fluid" alt="{{ product.name }}">
+        </div>
+        <div class="col-md-6">
+            <p><h3>Продукт: {{ product.name }}</h3></p>
+            <p>Версия: {{ current_version.version_name }} ({{current_version.version_number }})</p>
+            <p>Категория: {{ product.category.name }}</p>
+            <p>Цена: {{ product.price }} ₽</p>
+            <p>Вес: {{ product.weight }}</p>
+            <p>Описание: {{ product.description }}</p>
+            <button type="button" class="btn btn-xs btn-block btn-outline-primary">Купить</button>
+            <a href="{% url 'shop:product_list' %}" class="btn btn-xs btn-block btn-outline-primary">Назад</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
