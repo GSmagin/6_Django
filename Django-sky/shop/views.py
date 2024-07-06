@@ -15,10 +15,10 @@ class ProductListView(ListView):
     context_object_name = 'products'
     paginate_by = 3
 
-# def product_detail(request, pk):
-#     product = get_object_or_404(Product, pk=pk)
-#     context = {"product": product}
-#     return render(request, 'catalog/product_detail.html', context)
+    # def product_detail(request, pk):
+    #     product = get_object_or_404(Product, pk=pk)
+    #     context = {"product": product}
+    #     return render(request, 'catalog/product_detail.html', context)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -61,7 +61,7 @@ class ProductCreateView(CreateView):  # Переопределяем CreateView 
     model = Product
     form_class = ProductForm
     template_name = 'shop/product_create.html'
-#    fields = ['name', 'description', 'price', 'weight', 'category', 'image']
+    #    fields = ['name', 'description', 'price', 'weight', 'category', 'image']
     success_url = reverse_lazy('shop:product_list')
 
 
@@ -69,7 +69,6 @@ class ProductUpdateView(UpdateView):
     model = Product
     form_class = ProductForm
     template_name = 'shop/product_update.html'
-
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -95,7 +94,6 @@ class ProductUpdateView(UpdateView):
 
         if form.is_valid() and formset.is_valid():
             self.object = form.save()
-
             instances = formset.save(commit=False)
             for instance in instances:
                 if instance.is_current:
@@ -103,14 +101,12 @@ class ProductUpdateView(UpdateView):
                         is_current=False)
                 instance.product = self.object
                 instance.save()
-
             formset.save_m2m()
 
             # Удаление форм, помеченных для удаления
             for form in formset.deleted_forms:
                 if form.instance.pk:
                     form.instance.delete()
-
             return redirect(self.get_success_url())
         else:
             return self.render_to_response(self.get_context_data(form=form, formset=formset))
@@ -118,6 +114,7 @@ class ProductUpdateView(UpdateView):
     def get_success_url(self):
         # return reverse_lazy('shop:product_update', kwargs={'pk': self.object.pk})
         return reverse_lazy('shop:product_list')
+
 
 class ProductDeleteView(DeleteView):
     model = Product  # Переопределяем DeleteView для удаления продукта
@@ -134,4 +131,3 @@ def contacts(request):
         print(f'Имя: {name}, Телефон: {phone}, Сообщение: {message}')
 
     return render(request, 'main/contacts.html', {'contacts': contacts})
-
