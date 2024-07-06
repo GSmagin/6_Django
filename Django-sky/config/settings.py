@@ -13,12 +13,25 @@ import configparser
 import os
 from pathlib import Path
 
+# Путь к текущему виртуальному окружению
+venv_path = os.environ['VIRTUAL_ENV']
+
+# Путь к файлу config.ini внутри виртуального окружения
+config_file_path = os.path.join(venv_path, 'config.ini')
+
+# [database]
+# NAME = db_django2
+# USER = postgres
+# PASSWORD = ''
+# HOST = 127.0.0.1
+# PORT = 5432
+
+# Объект конфигурации
 config = configparser.ConfigParser()
-config.read('venv/config.ini')
+config.read(config_file_path)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -84,16 +97,29 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'db_django2', # Название БД
+#         'USER': 'postgres', # Пользователь для подключения
+#         'PASSWORD': '', # Пароль для этого пользователя
+#         'HOST': '127.0.0.1', # Адрес, на котором развернут сервер БД
+#         'PORT': 5432, # Порт, на котором работает сервер БД
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db_django2', # Название БД
-        'USER': 'postgres', # Пользователь для подключения
-        'PASSWORD': '', # Пароль для этого пользователя
-        'HOST': '127.0.0.1', # Адрес, на котором развернут сервер БД
-        'PORT': 5432, # Порт, на котором работает сервер БД
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config.get('database', 'NAME'),
+        'USER': config.get('database', 'USER'),
+        'PASSWORD': config.get('database', 'PASSWORD'),
+        'HOST': config.get('database', 'HOST'),
+        'PORT': config.get('database', 'PORT'),
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
