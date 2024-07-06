@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 # Create your models here.
 
@@ -32,4 +33,24 @@ class Product(models.Model):
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ['-created_at']
+
+
+class Version(models.Model):
+    product = models.ForeignKey(Product, related_name='versions', on_delete=models.CASCADE, verbose_name="Продукт")
+    version_number = models.CharField(max_length=50, verbose_name="Номер версии")
+    version_name = models.CharField(max_length=255, verbose_name="Название версии")
+    is_current = models.BooleanField(default=False, verbose_name="Текущая версия")
+
+    class Meta:
+        verbose_name = "Версия"
+        verbose_name_plural = "Версии"
+        constraints = [
+            # models.UniqueConstraint(fields=['product', 'version_name'], name='unique_version_name_per_product'),
+            models.UniqueConstraint(fields=['product', 'version_name', 'version_number'],
+                                    name='unique_version_per_product')
+        ]
+
+    def __str__(self):
+        return f'{self.version_name} ({self.version_number})'
+
 

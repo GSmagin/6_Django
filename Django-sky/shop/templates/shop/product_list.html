@@ -1,4 +1,5 @@
 {% extends 'main/index.html' %}
+{% load crispy_forms_tags %}
 {% block center %}
     <div class="pricing-header px-3 py-3 pt-md-1 pb-md-2 mx-auto text-center">
         <h6 class="display-6 mb-3 mt-0">Страница магазина</h6>
@@ -8,7 +9,7 @@
 {% block content %}
 {% if object_list %}
     <div class="row text-center">
-        {% for product in object_list %}
+        {% for product, current_version in products_with_versions %}
             <div class="p-1 col-4">
                 <div class="card mx-auto">
                     <div class="card-header div-fixed-size">
@@ -18,6 +19,11 @@
                         <ul class="mt-2 mb-2 text-start">
                             <!--                       <li>Продукт: {{ product.name | slice:":30" }}</li>-->
                             <li>Продукт: {{ product.name | truncate_chars:30 }}</li>
+                            {% if current_version %}
+                            <li>Версия: {{ current_version.version_name }} ({{ current_version.version_number }})</li>
+                            {% else  %}
+                               <li>Версия: Версия отсутствует</li>
+                            {% endif %}
                             <li>Категория: {{ product.category.name | truncate_chars:30 }}</li>
                             <li>Вес: {{ product.weight }}</li>
                             <li>Цена: {{ product.price }} ₽</li>

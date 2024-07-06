@@ -1,11 +1,13 @@
 import datetime
 import smtplib
-
+import logging
 import pytz
 from django.conf import settings
 from django.core.mail import send_mail
-
 from mailings.models import Mailing, Attempt
+
+
+logger = logging.getLogger(__name__)
 
 
 def send_email(message_settings, message_client):
@@ -63,4 +65,5 @@ def send_mails():
 def print_time_job():
     time_zone = pytz.timezone(settings.TIME_ZONE)
     now = datetime.datetime.now(time_zone)
+    logger.info("ready method in YourAppConfig is called")
     print(f"Current time: {now}")
