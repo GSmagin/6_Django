@@ -5,7 +5,7 @@ from config import settings
 
 
 def congratulate_mail_newsletter(blog):
-    if blog.views_count == 15:
+    if blog.views_count == 7:
         subject = 'Поздравляем, вы достигли отметки в 100 просмотров!'
         body = f'Ваш пост "{blog.title}" был просмотрен 100 раз!'
 
