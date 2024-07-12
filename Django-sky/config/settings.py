@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'django_apscheduler',
     'crispy_forms',
     'crispy_bootstrap4',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -200,10 +201,15 @@ EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
 #  RECIPIENT_LIST = config.get('email',)
 EMAIL_RECIPIENT = 'grog512new@mail.ru'
 
-
 # Email settings
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
+AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 
 
 # CRONJOBS = [
