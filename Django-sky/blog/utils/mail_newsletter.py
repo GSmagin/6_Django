@@ -19,3 +19,4 @@ def congratulate_mail_newsletter(blog):
             smtp.login(settings.EMAIL_HOST_USER, settings.EMAIL_HOST_PASSWORD)
             smtp.send_message(msg)
             print(f'Письмо отправлено на {settings.EMAIL_RECIPIENT}')
+
