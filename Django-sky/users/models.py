@@ -55,20 +55,21 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         verbose_name_plural = "Пользователи"
 
 
-def create_superuser() -> None:
-    superuser_email = 'admin@example.com'
-    superuser_password = 'admin'
+# def create_superuser() -> None:
+#     superuser_email = 'admin@example.com'
+#     superuser_password = 'admin'
+#
+#     if not CustomUser.objects.filter(email=superuser_email).exists():
+#         CustomUser.objects.create(
+#             email=superuser_email,
+#             password=make_password(superuser_password),
+#             is_staff=True,
+#             is_superuser=True,
+#             is_active=True
+#         )
+#         print(f'Суперпользователь создан с помощью электронной почты: {superuser_email}')
+#     else:
+#         print(f'Суперпользователь с этой почтой: {superuser_email} уже существует')
 
-    if not CustomUser.objects.filter(email=superuser_email).exists():
-        CustomUser.objects.create(
-            email=superuser_email,
-            password=make_password(superuser_password),
-            is_staff=True,
-            is_superuser=True,
-            is_active=True
-        )
-        print(f'Суперпользователь создан с помощью электронной почты: {superuser_email}')
-    else:
-        print(f'Суперпользователь с этой почтой: {superuser_email} уже существует')
 
 #create_superuser()

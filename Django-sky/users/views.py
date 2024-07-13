@@ -1,24 +1,26 @@
 from django.contrib import messages
-from django.contrib.auth import logout
+from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LogoutView
 from django.http import HttpResponse
 from django.utils.crypto import get_random_string
+from django.views import View
 from django.views.generic import UpdateView
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
-from .forms import CustomUserCreationForm, CustomUserChangeForm
+from .forms import UserRegisterForm, UpdateUserChangeForm
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import CustomUser
-from django.shortcuts import get_object_or_404, redirect
+from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
 
 class RegisterView(FormView):
-    template_name = 'users/register.html'
-    form_class = CustomUserCreationForm
+    template_name = 'users/login.html'
+    form_class = UserRegisterForm
     success_url = reverse_lazy('users:login')
 
     def form_valid(self, form):
@@ -28,7 +30,7 @@ class RegisterView(FormView):
         user.save()
         # Отправка подтверждающего письма
         verification_link = self.request.build_absolute_uri(
-            reverse_lazy('users:verify_email',  kwargs={'token': user.token})
+            reverse_lazy('users:verify_email', kwargs={'token': user.token})
         )
         send_mail(
             'Подтверждение регистрации',
@@ -79,9 +81,9 @@ class PasswordResetView(FormView):
                 fail_silently=False,
             )
 
-           # Проверяем, было ли отправлено письмо
+            #  Проверяем, было ли отправлено письмо
         if response.status_code == 302:  # Статус код 302 означает успешное перенаправление
-            # Сообщение об успешной отправке письма
+            #  Сообщение об успешной отправке письма
             messages.success(self.request, 'Письмо для сброса пароля отправлено. Пожалуйста, проверьте вашу почту.')
         else:
             messages.error(self.request, 'Произошла ошибка при отправке письма для сброса пароля.')
@@ -91,14 +93,15 @@ class PasswordResetView(FormView):
 
 class ProfileUpdateView(LoginRequiredMixin, UpdateView):
     model = CustomUser
-    form_class = CustomUserChangeForm
-    template_name = 'users/profile_update.html'
+    form_class = UpdateUserChangeForm
+    template_name = 'users/login.html'
     success_url = reverse_lazy('main:main')
 
     def get_object(self, queryset=None):
         return self.request.user
 
 
-def logout_view(request):
-    logout(request)
-    return redirect('/')
+class UserLogoutView(View):
+    def get(self, request):
+        logout(request)
+        return redirect('main:main')

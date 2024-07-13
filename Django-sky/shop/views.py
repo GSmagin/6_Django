@@ -81,7 +81,7 @@ class ProductUpdateView(UpdateView):
         print(self.request.user)
 
         if product.owner != self.request.user:
-            # raise PermissionDenied("You are not allowed to edit this product.")
+            # raise PermissionDenied("Вы не может изменять не свои продукты.")
             messages.success(self.request, 'Вы не может изменять не свои продукты, '
                                            'так как вы не являетесь его владельцем.')
             return redirect('main:not_found')
@@ -149,11 +149,9 @@ class ProductDeleteView(DeleteView):
 
     def dispatch(self, request, *args, **kwargs):
         product = self.get_object()
-        print(product.owner)
-        print(self.request.user)
 
         if product.owner != self.request.user:
-            # raise PermissionDenied("You are not allowed to edit this product.")
+            # raise PermissionDenied("Вы не может удалять не свои продукты")
             messages.success(self.request, 'Вы не может удалять не свои продукты, '
                                            'так как вы не являетесь его владельцем.')
             return redirect('main:not_found')
