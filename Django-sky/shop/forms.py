@@ -10,6 +10,7 @@ from .models import Product, Version
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
+        exclude = ['owner']
         fields = "__all__"
 
     def clean_name(self):

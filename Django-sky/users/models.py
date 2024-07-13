@@ -2,6 +2,7 @@ from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin, AbstractUser
 from django.db import models
 from django.utils import timezone
+import uuid
 
 NULLABLE = {'null': True, 'blank': True}
 
@@ -33,7 +34,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     avatar = models.ImageField(upload_to='avatars/', **NULLABLE, verbose_name='Аватар')
     phone_number = models.CharField(max_length=15, **NULLABLE, verbose_name='Номер телефона')
     country = models.CharField(max_length=50, **NULLABLE, verbose_name='Страна')
-    token = models.CharField(max_length=100, **NULLABLE, verbose_name='Токен')
+    token = models.UUIDField(default=uuid.uuid4, unique=True, **NULLABLE, verbose_name='Токен')
     date_joined = models.DateTimeField(default=timezone.now, verbose_name='Дата регистрации')
     last_login = models.DateTimeField(**NULLABLE, verbose_name='Дата последнего входа')
     is_staff = models.BooleanField(default=False, **NULLABLE, verbose_name='Пользователь')

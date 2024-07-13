@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'users.apps.UsersConfig',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -196,7 +197,7 @@ EMAIL_HOST = config.get('email', 'EMAIL_HOST')
 EMAIL_PORT = config.get('email', 'EMAIL_PORT')
 EMAIL_HOST_USER = config.get('email', 'EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
-EMAIL_USE_SSL = config.get('email', 'EMAIL_USE_SSL')
+#EMAIL_USE_SSL = config.get('email', 'EMAIL_USE_SSL')
 EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
 #  RECIPIENT_LIST = config.get('email',)
 EMAIL_RECIPIENT = 'grog512new@mail.ru'

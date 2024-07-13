@@ -1,9 +1,10 @@
-from django.core.exceptions import ValidationError
+from django.core.exceptions import PermissionDenied
 from django.forms import inlineformset_factory, BaseInlineFormSet
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib import messages
 
 from shop.forms import ProductForm, VersionForm, BaseVersionFormSet
 from shop.models import Product, Version
@@ -64,11 +65,32 @@ class ProductCreateView(CreateView):  # Переопределяем CreateView 
     #    fields = ['name', 'description', 'price', 'weight', 'category', 'image']
     success_url = reverse_lazy('shop:product_list')
 
+    def form_valid(self, form):
+        form.instance.owner = self.request.user  # Устанавливаем текущего пользователя как владельца
+        return super().form_valid(form)
+
 
 class ProductUpdateView(UpdateView):
     model = Product
     form_class = ProductForm
     template_name = 'shop/product_update.html'
+
+    def dispatch(self, request, *args, **kwargs):
+        product = self.get_object()
+        print(product.owner)
+        print(self.request.user)
+
+        if product.owner != self.request.user:
+            # raise PermissionDenied("You are not allowed to edit this product.")
+            messages.success(self.request, 'Вы не может изменять не свои продукты, '
+                                           'так как вы не являетесь его владельцем.')
+            return redirect('main:not_found')
+
+        return super().dispatch(request, *args, **kwargs)
+
+    # def form_valid(self, form):
+    #     form.instance.owner = self.request.user
+    #     return super().form_valid(form)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -111,6 +133,9 @@ class ProductUpdateView(UpdateView):
         else:
             return self.render_to_response(self.get_context_data(form=form, formset=formset))
 
+    # def get_object(self, queryset=None):
+    #     return self.request.user
+
     def get_success_url(self):
         # return reverse_lazy('shop:product_update', kwargs={'pk': self.object.pk})
         return reverse_lazy('shop:product_list')
@@ -121,6 +146,10 @@ class ProductDeleteView(DeleteView):
     fields = ['name', 'description', 'price', 'weight', 'category', 'image']
     template_name = 'shop/product_delete.html'
     success_url = reverse_lazy('shop:product_list')
+
+    def form_valid(self, form):
+        form.instance.owner = self.request.user  # Привязываем текущего пользователя к продукту
+        return super().form_valid(form)
 
 
 def contacts(request):
