@@ -147,9 +147,18 @@ class ProductDeleteView(DeleteView):
     template_name = 'shop/product_delete.html'
     success_url = reverse_lazy('shop:product_list')
 
-    def form_valid(self, form):
-        form.instance.owner = self.request.user  # Привязываем текущего пользователя к продукту
-        return super().form_valid(form)
+    def dispatch(self, request, *args, **kwargs):
+        product = self.get_object()
+        print(product.owner)
+        print(self.request.user)
+
+        if product.owner != self.request.user:
+            # raise PermissionDenied("You are not allowed to edit this product.")
+            messages.success(self.request, 'Вы не может удалять не свои продукты, '
+                                           'так как вы не являетесь его владельцем.')
+            return redirect('main:not_found')
+
+        return super().dispatch(request, *args, **kwargs)
 
 
 def contacts(request):
