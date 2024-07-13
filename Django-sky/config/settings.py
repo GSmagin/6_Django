@@ -61,6 +61,8 @@ INSTALLED_APPS = [
     'django_apscheduler',
     'crispy_forms',
     'crispy_bootstrap4',
+    'users.apps.UsersConfig',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -119,9 +121,6 @@ DATABASES = {
     }
 }
 
-
-
-# Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -194,9 +193,28 @@ APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CRONJOBS = [
-    ('*/5 * * * *', 'mailings.utils.print_time_job', f'>> {BASE_DIR}/scheduled_job.log')
-]
+EMAIL_HOST = config.get('email', 'EMAIL_HOST')
+EMAIL_PORT = config.get('email', 'EMAIL_PORT')
+EMAIL_HOST_USER = config.get('email', 'EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
+#EMAIL_USE_SSL = config.get('email', 'EMAIL_USE_SSL')
+EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
+#  RECIPIENT_LIST = config.get('email',)
+EMAIL_RECIPIENT = 'grog512new@mail.ru'
+
+# Email settings
+SERVER_EMAIL = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
+AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+PASSWORD_RESET_TIMEOUT = 3600
+
+# CRONJOBS = [
+#     ('*/5 * * * *', 'mailings.utils.print_time_job', f'>> {BASE_DIR}/scheduled_job.log')
+# ]
 
 # LOGGING = {
 #     'version': 1,
