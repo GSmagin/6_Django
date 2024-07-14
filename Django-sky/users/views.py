@@ -3,14 +3,15 @@ from django.contrib.auth import logout, login, authenticate
 from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LogoutView
+from django.contrib.auth.views import LogoutView, LoginView
 from django.http import HttpResponse
 from django.utils.crypto import get_random_string
 from django.views import View
 from django.views.generic import UpdateView
 from django.views.generic.edit import FormView
 from django.urls import reverse_lazy
-from .forms import UserRegisterForm, UpdateUserChangeForm
+from .forms import UserRegisterForm, UpdateUserChangeForm, StyledAuthenticationForm, StyledPasswordResetForm, \
+    ProfileUpdateForm
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import CustomUser
@@ -18,10 +19,15 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
 
+class CustomLoginView(LoginView):
+    form_class = StyledAuthenticationForm
+    template_name = 'registration/login.html'
+
+
 class RegisterView(FormView):
-    template_name = 'users/login.html'
+    template_name = 'users/register.html'
     form_class = UserRegisterForm
-    success_url = reverse_lazy('users:login')
+    success_url = reverse_lazy('users:register')
 
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -62,8 +68,8 @@ def verify_email(request, token):
 
 class PasswordResetView(FormView):
     template_name = 'users/password_reset.html'
-    form_class = PasswordResetForm
-    success_url = reverse_lazy('users:login')
+    form_class = StyledPasswordResetForm
+    success_url = reverse_lazy('users:password_reset')
 
     def form_valid(self, form):
         response = super().form_valid(form)
@@ -93,8 +99,8 @@ class PasswordResetView(FormView):
 
 class ProfileUpdateView(LoginRequiredMixin, UpdateView):
     model = CustomUser
-    form_class = UpdateUserChangeForm
-    template_name = 'users/login.html'
+    form_class = ProfileUpdateForm
+    template_name = 'users/register.html'
     success_url = reverse_lazy('main:main')
 
     def get_object(self, queryset=None):
