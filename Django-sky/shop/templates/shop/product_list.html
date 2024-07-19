@@ -31,10 +31,15 @@
                         <button class="btn btn-xs btn-block btn-outline-primary">Купить</button>
                         <a class="btn btn-xs btn-block btn-outline-primary"
                            href="{% url 'shop:product_detail' product.pk %}">Подробно</a>
+                       {% if user.is_authenticated %}
                         <a class="btn btn-xs btn-block btn-outline-primary"
                            href="{% url 'shop:product_update' product.pk %}">Изменить</a>
-                        <a class="btn btn-xs btn-block btn-outline-primary"
+                           <a class="btn btn-xs btn-block btn-outline-primary"
                            href="{% url 'shop:product_delete' product.pk %}">Удалить</a>
+                       {% else %}
+                           <a class="btn btn-secondary" href="">Изменить</a>
+                           <a class="btn btn-secondary" href="">Удалить</a>
+                       {% endif %}
                     </div>
                 </div>
             </div>
@@ -43,7 +48,11 @@
     {% else %}
     <h4 class="text-center my-0 mr-md-auto font-weight-normal">Нет ни единого продукта</h4>
     {% endif %}
-    <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'shop:product_create' %}">Создать продукт</a>
+    {% if user.is_authenticated %}
+        <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'shop:product_create' %}">Создать продукт</a>
+    {% else %}
+        <a class="p-2 mb-4 mt-2 btn btn btn-secondary" href="">Создать продукт</a>   
+    {% endif %}
 
 
     <!-- Пагинация -->

@@ -14,6 +14,7 @@
             <p>Цена: {{ product.price }} ₽</p>
             <p>Вес: {{ product.weight }}</p>
             <p>Описание: {{ product.description }}</p>
+            <p>Автор: {{ product.owner }}</p>
             <button type="button" class="btn btn-xs btn-block btn-outline-primary">Купить</button>
             <a href="{% url 'shop:product_list' %}" class="btn btn-xs btn-block btn-outline-primary">Назад</a>
         </div>

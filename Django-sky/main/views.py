@@ -8,3 +8,7 @@ def base(request):
 def contacts(request):
     return render(request, 'main/contacts.html')
 
+
+def not_found(request):
+    return render(request, 'main/not_found.html')
+
