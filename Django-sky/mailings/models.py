@@ -19,6 +19,8 @@ class Client(models.Model):
 
 
 class Mailing(models.Model):
+    minute = 'Раз в минуту'
+    hour = 'Раз в час'
     daily = 'Раз в день'
     weekly = 'Раз в неделю'
     monthly = 'Раз в месяц'
@@ -28,6 +30,8 @@ class Mailing(models.Model):
     finished = 'Завершена'
 
     PERIODICITY_CHOICES = [
+        ('minute', 'Раз в минуту'),
+        ('hour', 'Раз в час'),
         ('daily', 'Раз в день'),
         ('weekly', 'Раз в неделю'),
         ('monthly', 'Раз в месяц'),
@@ -53,18 +57,6 @@ class Mailing(models.Model):
     class Meta:
         verbose_name = 'Рассылка'
         verbose_name_plural = 'Рассылки'
-
-
-# class Message(models.Model):
-#     subject = models.CharField(max_length=255, verbose_name="Тема письма")
-#     body = models.TextField(verbose_name="Текст письма")
-#
-#     def __str__(self):
-#         return self.subject
-#
-#     class Meta:
-#         verbose_name = 'Письмо'
-#         verbose_name_plural = 'Письма'
 
 
 class Attempt(models.Model):

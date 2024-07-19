@@ -28,8 +28,10 @@ class RegisterView(FormView):
     template_name = 'users/register.html'
     form_class = UserRegisterForm
     success_url = reverse_lazy('users:register')
+    extra_context = {'title': 'Регистрация'}
 
     def form_valid(self, form):
+
         response = super().form_valid(form)
         user = form.save()
         user.is_active = False  # Деактивируем пользователя до подтверждения почты
@@ -45,6 +47,7 @@ class RegisterView(FormView):
             [user.email],
             fail_silently=False,
         )
+
         # Проверяем, было ли отправлено письмо
         if response.status_code == 302:  # Статус код 302 означает успешное перенаправление
             # Сообщение об успешной отправке письма
