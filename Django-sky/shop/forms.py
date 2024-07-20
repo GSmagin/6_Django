@@ -2,7 +2,8 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
 from django import forms
 from django.core.exceptions import ValidationError
-from django.forms import BaseInlineFormSet, inlineformset_factory
+from django.forms import BaseInlineFormSet, inlineformset_factory, ModelForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Product, Version
 
@@ -65,5 +66,7 @@ class BaseVersionFormSet(BaseInlineFormSet):
             raise ValidationError('Вы можете выбрать только одну текущую версию продукта.')
 
 
-
-
+class ProductModeratorForm(LoginRequiredMixin, forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ('description', 'category', 'is_published')

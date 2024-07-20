@@ -16,7 +16,24 @@ class Category(models.Model):
         verbose_name_plural = "Категории"
 
 
+# class PublishedProductManager(models.Manager):
+#     def get_queryset(self):
+#         return super().get_queryset().filter(is_published='published')
+#
+#
+# class UnpublishedProductManager(models.Manager):
+#     def get_queryset(self):
+#         return super().get_queryset().filter(is_published='draft')
+
+
 class Product(models.Model):
+
+    STATUS_CHOICES = [
+        ('draft', 'Черновик'),
+        ('published', 'Опубликовано'),
+        ('archived', 'В архиве'),
+    ]
+
     name = models.CharField(max_length=255, verbose_name='Наименование')
     description = models.TextField(verbose_name='Описание')
     weight = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='Вес товара', null=True, blank=True)
@@ -26,15 +43,24 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата последнего изменения')
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True, verbose_name='Автор')
+    is_published = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft', verbose_name='Статуса публикации')
 #    manufactured_at = models.DateField(verbose_name='Дата производства')
 
-    def __str__(self):
-        return self.name
+    # published = PublishedProductManager()
+    # unpublished = UnpublishedProductManager()
 
     class Meta:
         verbose_name = "Продукт"
         verbose_name_plural = "Продукты"
         ordering = ['-created_at']
+        permissions = [
+            ('can_edit_product_publication', 'Can edit product publication'),
+            ('can_edit_product_description', 'Can edit product description'),
+            ('can_edit_product_category', 'Can edit product category'),
+        ]
+
+    def __str__(self):
+        return self.name
 
 
 class Version(models.Model):

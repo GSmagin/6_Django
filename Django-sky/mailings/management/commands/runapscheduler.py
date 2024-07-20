@@ -1,6 +1,7 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
 from apscheduler.triggers.cron import CronTrigger
+from apscheduler.triggers.interval import IntervalTrigger
 from django.conf import settings
 from django.core.management import BaseCommand
 from django_apscheduler import util
@@ -24,7 +25,9 @@ class Command(BaseCommand):
 
         scheduler.add_job(
             send_mails,
-            trigger=CronTrigger(second="*/30"),
+            #trigger=CronTrigger(second="*/30"),
+            # trigger=IntervalTrigger(minutes=1),
+            trigger=IntervalTrigger(seconds=5),
             id="sendmail",
             max_instances=10,
             replace_existing=True,

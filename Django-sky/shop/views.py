@@ -1,12 +1,13 @@
 from django.core.exceptions import PermissionDenied
-from django.forms import inlineformset_factory, BaseInlineFormSet
+from django.forms import inlineformset_factory, BaseInlineFormSet, ModelForm
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 
-from shop.forms import ProductForm, VersionForm, BaseVersionFormSet
+from shop.forms import ProductForm, VersionForm, BaseVersionFormSet, ProductModeratorForm
 from shop.models import Product, Version
 
 
@@ -16,10 +17,11 @@ class ProductListView(ListView):
     context_object_name = 'products'
     paginate_by = 3
 
-    # def product_detail(request, pk):
-    #     product = get_object_or_404(Product, pk=pk)
-    #     context = {"product": product}
-    #     return render(request, 'catalog/product_detail.html', context)
+    def get_queryset(self):
+        if self.request.user.groups.filter(name='Moderator_Product').exists() or self.request.user.groups.filter(
+                name='Admin').exists():
+            return Product.objects.all()
+        return Product.objects.filter(is_published='published')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -70,27 +72,40 @@ class ProductCreateView(CreateView):  # Переопределяем CreateView 
         return super().form_valid(form)
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(LoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
     template_name = 'shop/product_update.html'
 
     def dispatch(self, request, *args, **kwargs):
         product = self.get_object()
-        print(product.owner)
-        print(self.request.user)
+        # print(product.owner)
+        # print(self.request.user)
+        user = self.request.user
 
-        if product.owner != self.request.user:
-            # raise PermissionDenied("Вы не может изменять не свои продукты.")
-            messages.success(self.request, 'Вы не может изменять не свои продукты, '
+        has_permission = (
+                user.groups.filter(name='Admin').exists() or
+                user.groups.filter(name='Moderator_Product').exists() or
+                product.owner == user
+        )
+
+        if not has_permission:
+            # raise PermissionDenied("Вы не можете изменять этот продукт.")
+            messages.success(self.request, 'Вы не может изменять не свои продукты,'
                                            'так как вы не являетесь его владельцем.')
             return redirect('main:not_found')
-
         return super().dispatch(request, *args, **kwargs)
 
-    # def form_valid(self, form):
-    #     form.instance.owner = self.request.user
-    #     return super().form_valid(form)
+        # if product.owner != self.request.user:
+        #     # raise PermissionDenied("Вы не может изменять не свои продукты.")
+        #     messages.success(self.request, 'Вы не может изменять не свои продукты,'
+        #                                    'так как вы не являетесь его владельцем.')
+        #     if self.request.user.groups.filter(name='Admin').exists():
+        #         return super().dispatch(request, *args, **kwargs)
+        #
+        #     return redirect('main:not_found')
+        #
+        # return super().dispatch(request, *args, **kwargs)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -139,6 +154,18 @@ class ProductUpdateView(UpdateView):
     def get_success_url(self):
         # return reverse_lazy('shop:product_update', kwargs={'pk': self.object.pk})
         return reverse_lazy('shop:product_list')
+
+    def get_form_class(self):
+        user = self.request.user
+        if user == self.object.owner or user.groups.filter(name='Admin').exists():
+            return ProductForm
+        elif (user.has_perm('shop.can_edit_product_publication') and
+              user.has_perm('shop.can_edit_product_description') and
+              user.has_perm('shop.can_edit_product_category')):
+            return ProductModeratorForm
+        else:
+            return PermissionDenied
+            # return redirect('main:not_found')
 
 
 class ProductDeleteView(DeleteView):
