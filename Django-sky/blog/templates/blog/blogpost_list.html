@@ -10,11 +10,13 @@
     {% if object_list %}
         <div class="pricing-header px-3 py-3 pt-md-1 pb-md-2 mx-auto">
         <div class="row ">
-            <div class="row mb-2">
+            <div class="row mb-2" >
                 {% for blog in object_list %}
                     {% if blog.is_published %}
-                        <div class="col-md-6">
-                            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                         <div class="col-md-2">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                                 <div class="col p-4 d-flex flex-column position-static">
                                     <!--                        <strong class="d-inline-block mb-2 text-success">Design</strong> -->
                                     <strong class="d-inline-block mb-0 text-success"
@@ -27,10 +29,10 @@
                                 </div>
                                 <div class="col-auto l-none l-lg-block">
                                     {% if blog.preview_image %}
-                                        <img class="bd-placeholder-img" width="200" height="230"
+                                        <img class="bd-placeholder-img" width="250" height="250"
                                              src="{{ blog.preview_image.url }}">
                                     {% else %}
-                                        <img class="bd-placeholder-img" width="200" height="230"
+                                        <img class="bd-placeholder-img" width="250" height="250"
                                              src="/media/no_foto.jpg">
                                     {% endif %}
                                 </div>
@@ -38,7 +40,7 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-            </div>
+        </div>
         </div>
     {% else %}
         <h4 class="text-center my-0 mr-md-auto font-weight-normal">Нет ни единого поста</h4>

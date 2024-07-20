@@ -160,13 +160,12 @@ class ProductUpdateView(LoginRequiredMixin, UpdateView):
         if user == self.object.owner or user.groups.filter(name='Admin').exists():
             return ProductForm
         elif (user.has_perm('shop.can_edit_product_publication') and
-                user.has_perm('shop.can_edit_product_description') and
-                user.has_perm('shop.can_edit_product_category')):
+              user.has_perm('shop.can_edit_product_description') and
+              user.has_perm('shop.can_edit_product_category')):
             return ProductModeratorForm
         else:
-            return redirect('main:not_found')
-
-        #return PermissionDenied
+            return PermissionDenied
+            # return redirect('main:not_found')
 
 
 class ProductDeleteView(DeleteView):
