@@ -44,5 +44,5 @@ scheduler = BackgroundScheduler()
 scheduler.add_jobstore('django_apscheduler.jobstores:DjangoJobStore')
 scheduler.add_job(send_mailing, 'interval', minutes=1, id='send_mailing')
 register_events(scheduler)
-
 scheduler.start()
+
