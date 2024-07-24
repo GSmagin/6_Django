@@ -31,7 +31,7 @@ class BlogListView(ListView):
     model = Blog
     template_name = 'blog/blogpost_list.html'
     context_object_name = 'blog'
-    paginate_by = 3
+    paginate_by = 10
 
     def get_queryset(self):
         if self.request.user.has_perm('blog.can_publish_post'):
@@ -54,7 +54,7 @@ class BlogCreateView(CreateView):
 
     def form_valid(self, form):
         title = transliterate.slugify(form.cleaned_data['title'])
-        if self.model.objects.filter(title=title).exists():
+        if self.model.objects.filter(slug=title).exists():
             form.add_error('title', 'Пост с таким slug уже существует')
             return self.form_invalid(form=form)
 

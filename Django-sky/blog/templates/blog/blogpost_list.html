@@ -10,10 +10,10 @@
     {% if object_list %}
         <div class="pricing-header px-3 py-3 pt-md-1 pb-md-2 mx-auto">
         <div class="row ">
-            <div class="row mb-2" >
+            <div class="row mb-2">
                 {% for blog in object_list %}
                     {% if blog.is_published %}
-                         <div class="col-md-2">
+                        <div class="col-md-2">
                         </div>
                         <div class="col-md-9">
                             <div class="row g-0 border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -40,7 +40,7 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-        </div>
+            </div>
         </div>
     {% else %}
         <h4 class="text-center my-0 mr-md-auto font-weight-normal">Нет ни единого поста</h4>
@@ -79,6 +79,8 @@
     </ul>
 </nav>
 
-<a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'blog:blogpost_create' %}">Создать пост</a>
+{% if user.is_authenticated %}
+    <a class="p-2 mb-4 mt-2 btn btn-outline-primary" href="{% url 'blog:blogpost_create' %}">Создать пост</a>
+{% endif %}
 
 {% endblock %}
