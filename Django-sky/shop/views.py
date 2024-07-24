@@ -19,7 +19,7 @@ class ProductListView(ListView):
 
     def get_queryset(self):
         if self.request.user.groups.filter(name='Moderator_Product').exists() or self.request.user.groups.filter(
-                name='Admin').exists():
+                name='Admin').exists() or self.request.user.groups.filter(name='User_Product').exists():
             return Product.objects.all()
         return Product.objects.filter(is_published='published')
 
