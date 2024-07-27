@@ -6,8 +6,10 @@ from django.urls import reverse_lazy
 from django.utils.text import slugify
 from django.views.generic import DetailView, ListView, UpdateView, DeleteView, TemplateView, CreateView
 from django.core.exceptions import PermissionDenied
+from config.settings import CACHE_ENABLED
 
 from blog.models import Blog
+from blog.servises import get_blog_from_cache
 from blog.utils.mail_newsletter import congratulate_mail_newsletter
 
 
@@ -34,9 +36,21 @@ class BlogListView(ListView):
     paginate_by = 10
 
     def get_queryset(self):
+        # Проверяем наличие прав у пользователя
         if self.request.user.has_perm('blog.can_publish_post'):
+            if CACHE_ENABLED:
+                return get_blog_from_cache()
             return Blog.objects.all()
-        return Blog.objects.filter(is_published=True)
+        else:
+            # Для обычных пользователей используем только опубликованные посты
+            if CACHE_ENABLED:
+                blog_list = get_blog_from_cache()
+                return blog_list.filter(is_published=True)
+            return Blog.objects.filter(is_published=True)
+
+        # if self.request.user.has_perm('blog.can_publish_post'):
+        #     return Blog.objects.all()
+        # return Blog.objects.filter(is_published=True)
 
 
 class BlogCreateView(CreateView):
@@ -87,7 +101,6 @@ class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
             messages.error(request, 'У вас нет прав для редактирования этого поста.')
             return redirect('blog:blogpost_list')
         return super().dispatch(request, *args, **kwargs)
-
 
     def form_valid(self, form):
         if form.is_valid():

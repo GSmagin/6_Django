@@ -219,25 +219,18 @@ PASSWORD_RESET_TIMEOUT = 3600
 #     ('*/5 * * * *', 'mailings.utils.print_time_job', f'>> {BASE_DIR}/scheduled_job.log')
 # ]
 
-# CACHE_ENABLED=True
-# if CACHE_ENABLED:
-CACHES = {
-    "default": {
-        "BACKEND": "django.core.cache.backends.redis.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379",
-        #  "TIMEOUT": 300  # Ручная регулировка времени жизни кеша в секундах, по умолчанию 300
+CACHE_ENABLED = True
+if CACHE_ENABLED:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": "redis://127.0.0.1:6379",
+            #  "TIMEOUT": 300  # Ручная регулировка времени жизни кеша в секундах, по умолчанию 300
+        }
     }
-}
-
-
-# MIDDLEWARE = [
-#     "django.middleware.cache.UpdateCacheMiddleware",
-#     "django.middleware.cache.FetchFromCacheMiddleware",
-# ]
-
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 30
+CACHE_MIDDLEWARE_SECONDS = 60
 CACHE_MIDDLEWARE_KEY_PREFIX = 'DJ_'
 
 # LOGGING = {
