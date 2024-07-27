@@ -1,7 +1,8 @@
 from django.urls import path
 
+from shop.views import contacts
 from .apps import MainConfig
-from .views import base, contacts, not_found
+from .views import base, not_found
 
 app_name = MainConfig.name
 

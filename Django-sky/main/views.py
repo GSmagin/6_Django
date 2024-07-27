@@ -11,4 +11,3 @@ def contacts(request):
 
 def not_found(request):
     return render(request, 'main/not_found.html')
-

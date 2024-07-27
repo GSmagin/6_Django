@@ -207,16 +207,16 @@ PASSWORD_RESET_TIMEOUT = os.getenv('PASSWORD_RESET_TIMEOUT')
 CACHE_ENABLED = True
 if CACHE_ENABLED:
     CACHES = {
-        "default": {
+        'default': {
             "BACKEND": "django.core.cache.backends.redis.RedisCache",
             "LOCATION": os.getenv('REDIS_URL'),
-            #  "TIMEOUT": 300  # Ручная регулировка времени жизни кеша в секундах, по умолчанию 300
+            # "TIMEOUT": 30 # Ручная регулировка времени жизни кеша в секундах, по умолчанию 300
         }
     }
 
-CACHE_MIDDLEWARE_ALIAS = os.getenv('CACHE_MIDDLEWARE_ALIAS')
-CACHE_MIDDLEWARE_SECONDS = os.getenv('CACHE_MIDDLEWARE_SECONDS')
 CACHE_MIDDLEWARE_KEY_PREFIX = os.getenv('CACHE_MIDDLEWARE_KEY_PREFIX')
+CACHE_MIDDLEWARE_SECONDS = int(os.getenv('CACHE_MIDDLEWARE_SECONDS'))
+
 
 # LOGGING = {
 #     'version': 1,
