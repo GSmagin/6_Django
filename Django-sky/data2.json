@@ -59,7 +59,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "1",
-        "object_repr": "1 (next run at: Июль 13, 2024, 10:05:18 п.п.)",
+        "object_repr": "1 (next run at: РСЋР»СЊ 13, 2024, 10:05:18 Рї.Рї.)",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -85,7 +85,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -111,7 +111,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-13 21:59:53+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-13 21:59:53+03:00",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -150,7 +150,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-13 22:34:53+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-13 22:34:53+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -163,7 +163,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-12 22:34:24+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-12 22:34:24+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -176,7 +176,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-13 22:36:14+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-13 22:36:14+03:00",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -189,7 +189,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 13, 2024, 10:48:37 п.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 13, 2024, 10:48:37 Рї.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -202,7 +202,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 12, 2024, 11:09:30 п.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 12, 2024, 11:09:30 Рї.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -215,7 +215,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 11, 2024, 11:09:30 п.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 11, 2024, 11:09:30 Рї.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -254,7 +254,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "2",
-        "object_repr": "Рассылка 2 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 2 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -267,7 +267,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -280,7 +280,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
         "action_flag": 2,
         "change_message": "[]"
     }
@@ -293,7 +293,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-12 22:34:24+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-12 22:34:24+03:00",
         "action_flag": 2,
         "change_message": "[]"
     }
@@ -306,7 +306,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-13 23:09:49+03:00",
         "action_flag": 2,
         "change_message": "[]"
     }
@@ -319,7 +319,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 13, 2024, 11:18:42 п.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 13, 2024, 11:18:42 Рї.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -332,7 +332,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "2",
-        "object_repr": "Рассылка 2 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 2 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
     }
@@ -345,7 +345,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
     }
@@ -358,7 +358,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 00:10:49+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 00:10:49+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -371,7 +371,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 00:10:12+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 00:10:12+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -384,7 +384,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 00:10:27+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 00:10:27+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -397,7 +397,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "print_time_minute",
-        "object_repr": "print_time_minute (next run at: Июль 15, 2024, 1:22:05 д.п.)",
+        "object_repr": "print_time_minute (next run at: РСЋР»СЊ 15, 2024, 1:22:05 Рґ.Рї.)",
         "action_flag": 3,
         "change_message": ""
     }
@@ -410,7 +410,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 01:33:27+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 01:33:27+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -423,7 +423,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 01:34:38+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 01:34:38+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -436,7 +436,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 01:40:54+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 01:40:54+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -449,7 +449,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "my_job",
-        "object_repr": "my_job (next run at: Июль 15, 2024, 1:48:14 д.п.)",
+        "object_repr": "my_job (next run at: РСЋР»СЊ 15, 2024, 1:48:14 Рґ.Рї.)",
         "action_flag": 3,
         "change_message": ""
     }
@@ -462,7 +462,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 01:55:01+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 01:55:01+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -475,7 +475,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 01:55:11+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 01:55:11+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -488,7 +488,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 01:56:19+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 01:56:19+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -501,7 +501,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 01:58:26+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 01:58:26+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21119,7 +21119,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 15, 2024, 1:55:38 д.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 15, 2024, 1:55:38 Рґ.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -21132,7 +21132,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 15, 2024, 2:39 д.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 15, 2024, 2:39 Рґ.Рї.)",
         "action_flag": 2,
         "change_message": "[]"
     }
@@ -21145,7 +21145,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 02:10:11+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 02:10:11+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21158,7 +21158,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 02:05:19+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 02:05:19+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21171,7 +21171,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 02:03:27+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 02:03:27+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21184,7 +21184,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 02:04:00+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 02:04:00+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21197,7 +21197,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "2",
-        "object_repr": "Рассылка 2 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 2 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043e\\u043a\\u043e\\u043d\\u0447\\u0430\\u043d\\u0438\\u044f \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
     }
@@ -21210,7 +21210,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043e\\u043a\\u043e\\u043d\\u0447\\u0430\\u043d\\u0438\\u044f \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
     }
@@ -21223,7 +21223,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 02:07:26+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 02:07:26+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21236,7 +21236,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 02:07:33+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 02:07:33+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21249,7 +21249,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 02:07:42+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 02:07:42+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21262,7 +21262,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 03:07:26+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 03:07:26+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21275,7 +21275,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to dajawep209@apn7.com at 2024-07-15 04:07:33+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to dajawep209@apn7.com at 2024-07-15 04:07:33+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21288,7 +21288,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 13:07:42+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 13:07:42+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21301,7 +21301,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "3",
-        "object_repr": "Рассылка 3 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 3 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -21314,7 +21314,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "4",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-15 02:10:24+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-15 02:10:24+03:00",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -21327,7 +21327,7 @@
         "user": 20,
         "content_type": 14,
         "object_id": "sendmail",
-        "object_repr": "sendmail (next run at: Июль 10, 2024, 2:14:39 д.п.)",
+        "object_repr": "sendmail (next run at: РСЋР»СЊ 10, 2024, 2:14:39 Рґ.Рї.)",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"Next run time\"]}}]"
     }
@@ -21340,7 +21340,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "3",
-        "object_repr": "Рассылка 3 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 3 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0435\\u0440\\u0438\\u043e\\u0434\\u0438\\u0447\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
     }
@@ -21353,7 +21353,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "3",
-        "object_repr": "Рассылка 3 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 3 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043e\\u043a\\u043e\\u043d\\u0447\\u0430\\u043d\\u0438\\u044f \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\"]}}]"
     }
@@ -21366,7 +21366,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "4",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-15 02:10:24+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-15 02:10:24+03:00",
         "action_flag": 2,
         "change_message": "[]"
     }
@@ -21392,7 +21392,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "3",
-        "object_repr": "Рассылка 3 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 3 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043f\\u0438\\u0441\\u044c\\u043c\\u0430\"]}}]"
     }
@@ -21418,7 +21418,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0441\\u043e\\u0437\\u0434\\u0430\\u043d\\u0438\\u044f\", \"\\u0414\\u0430\\u0442\\u0430 \\u043e\\u043a\\u043e\\u043d\\u0447\\u0430\\u043d\\u0438\\u044f \\u0440\\u0430\\u0441\\u0441\\u044b\\u043b\\u043a\\u0438\", \"\\u041f\\u0435\\u0440\\u0438\\u043e\\u0434\\u0438\\u0447\\u043d\\u043e\\u0441\\u0442\\u044c\", \"\\u0422\\u0435\\u043c\\u0430 \\u043f\\u0438\\u0441\\u044c\\u043c\\u0430\", \"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043f\\u0438\\u0441\\u044c\\u043c\\u0430\", \"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
     }
@@ -21431,7 +21431,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to matoci3328@modotso.com at 2024-07-16 00:08:59+03:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to matoci3328@modotso.com at 2024-07-16 00:08:59+03:00",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u043f\\u043e\\u043f\\u044b\\u0442\\u043a\\u0438\"]}}]"
     }
@@ -21444,7 +21444,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "11",
-        "object_repr": "Попытка 1 to matoci3328@modotso.com at 2024-07-15 21:07:59.067772+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to matoci3328@modotso.com at 2024-07-15 21:07:59.067772+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21457,7 +21457,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "10",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-15 21:07:58.650036+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-15 21:07:58.650036+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21470,7 +21470,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "9",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-15 21:05:58.827726+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-15 21:05:58.827726+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21483,7 +21483,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "8",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-15 21:04:00.610855+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-15 21:04:00.610855+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21496,7 +21496,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "7",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:04:00.063897+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:04:00.063897+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21509,7 +21509,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "6",
-        "object_repr": "Попытка 2 to matoci3328@modotso.com at 2024-07-15 21:03:59.673550+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to matoci3328@modotso.com at 2024-07-15 21:03:59.673550+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21522,7 +21522,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "5",
-        "object_repr": "Попытка 2 to mailsgv@mail.ru at 2024-07-15 21:01:39.651341+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to mailsgv@mail.ru at 2024-07-15 21:01:39.651341+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21535,7 +21535,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "4",
-        "object_repr": "Попытка 3 to Grog512new@mail.ru at 2024-07-14 23:10:24+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 3 to Grog512new@mail.ru at 2024-07-14 23:10:24+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21548,7 +21548,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "3",
-        "object_repr": "Попытка 2 to Grog512new@mail.ru at 2024-07-15 00:07:26+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 2 to Grog512new@mail.ru at 2024-07-15 00:07:26+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21561,7 +21561,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "2",
-        "object_repr": "Попытка 1 to matoci3328@modotso.com at 2024-07-15 21:08:59+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to matoci3328@modotso.com at 2024-07-15 21:08:59+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21574,7 +21574,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "1",
-        "object_repr": "Попытка 1 to mailsgv@mail.ru at 2024-07-15 10:07:42+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to mailsgv@mail.ru at 2024-07-15 10:07:42+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21626,7 +21626,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "3",
-        "object_repr": "Рассылка 3 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 3 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21639,7 +21639,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "2",
-        "object_repr": "Рассылка 2 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 2 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21652,7 +21652,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0435\\u043c\\u0430 \\u043f\\u0438\\u0441\\u044c\\u043c\\u0430\", \"\\u0422\\u0435\\u043a\\u0441\\u0442 \\u043f\\u0438\\u0441\\u044c\\u043c\\u0430\", \"\\u041a\\u043b\\u0438\\u0435\\u043d\\u0442\"]}}]"
     }
@@ -21665,7 +21665,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "26",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:28:32.617119+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:28:32.617119+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21678,7 +21678,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "25",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:27:27.583143+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:27:27.583143+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21691,7 +21691,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "24",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:26:22.544455+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:26:22.544455+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21704,7 +21704,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "23",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:25:17.370053+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:25:17.370053+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21717,7 +21717,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "22",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:24:12.797045+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:24:12.797045+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21730,7 +21730,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "21",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:23:07.566928+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:23:07.566928+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21743,7 +21743,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "20",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:22:02.485606+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:22:02.485606+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21756,7 +21756,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "19",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:20:58.396125+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:20:58.396125+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21769,7 +21769,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "18",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:19:54.690821+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:19:54.690821+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21782,7 +21782,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "17",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:18:49.458530+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:18:49.458530+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21795,7 +21795,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "16",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:17:44.683746+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:17:44.683746+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21808,7 +21808,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "15",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:16:40.582794+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:16:40.582794+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21821,7 +21821,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "14",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:14:03.388258+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:14:03.388258+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21834,7 +21834,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "13",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:12:04.338357+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:12:04.338357+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21847,7 +21847,7 @@
         "user": 20,
         "content_type": 9,
         "object_id": "12",
-        "object_repr": "Попытка 1 to Grog512new@mail.ru at 2024-07-15 21:10:23.715121+00:00",
+        "object_repr": "РџРѕРїС‹С‚РєР° 1 to Grog512new@mail.ru at 2024-07-15 21:10:23.715121+00:00",
         "action_flag": 3,
         "change_message": ""
     }
@@ -21951,7 +21951,7 @@
         "user": 20,
         "content_type": 8,
         "object_id": "1",
-        "object_repr": "Рассылка 1 - Запущена",
+        "object_repr": "Р Р°СЃСЃС‹Р»РєР° 1 - Р—Р°РїСѓС‰РµРЅР°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0435\\u0440\\u0438\\u043e\\u0434\\u0438\\u0447\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
     }
@@ -21977,7 +21977,7 @@
         "user": 20,
         "content_type": 12,
         "object_id": "9",
-        "object_repr": "Баклажаны грунтовые",
+        "object_repr": "Р‘Р°РєР»Р°Р¶Р°РЅС‹ РіСЂСѓРЅС‚РѕРІС‹Рµ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440\"]}}]"
     }
@@ -21990,7 +21990,7 @@
         "user": 20,
         "content_type": 12,
         "object_id": "9",
-        "object_repr": "Баклажаны грунтовые",
+        "object_repr": "Р‘Р°РєР»Р°Р¶Р°РЅС‹ РіСЂСѓРЅС‚РѕРІС‹Рµ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\\u0430 \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
     }
@@ -22003,7 +22003,7 @@
         "user": 20,
         "content_type": 12,
         "object_id": "8",
-        "object_repr": "Чеснок ранний, отборный, терпкий",
+        "object_repr": "Р§РµСЃРЅРѕРє СЂР°РЅРЅРёР№, РѕС‚Р±РѕСЂРЅС‹Р№, С‚РµСЂРїРєРёР№",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\\u0430 \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
     }
@@ -22016,7 +22016,7 @@
         "user": 20,
         "content_type": 12,
         "object_id": "6",
-        "object_repr": "Картофель молодой мелкий немытый Азербайджан",
+        "object_repr": "РљР°СЂС‚РѕС„РµР»СЊ РјРѕР»РѕРґРѕР№ РјРµР»РєРёР№ РЅРµРјС‹С‚С‹Р№ РђР·РµСЂР±Р°Р№РґР¶Р°РЅ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441\\u0430 \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
     }
@@ -22107,7 +22107,7 @@
         "user": 20,
         "content_type": 12,
         "object_id": "9",
-        "object_repr": "Баклажаны грунтовые",
+        "object_repr": "Р‘Р°РєР»Р°Р¶Р°РЅС‹ РіСЂСѓРЅС‚РѕРІС‹Рµ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0442\\u043e\\u0440\"]}}]"
     }
@@ -22224,7 +22224,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "3",
-        "object_repr": "Как сохранить узнаваемость",
+        "object_repr": "РљР°Рє СЃРѕС…СЂР°РЅРёС‚СЊ СѓР·РЅР°РІР°РµРјРѕСЃС‚СЊ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
     }
@@ -22237,7 +22237,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "4",
-        "object_repr": "Какие есть универсальные форматы для визуала",
+        "object_repr": "РљР°РєРёРµ РµСЃС‚СЊ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Рµ С„РѕСЂРјР°С‚С‹ РґР»СЏ РІРёР·СѓР°Р»Р°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22250,7 +22250,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "3",
-        "object_repr": "Как сохранить узнаваемость",
+        "object_repr": "РљР°Рє СЃРѕС…СЂР°РЅРёС‚СЊ СѓР·РЅР°РІР°РµРјРѕСЃС‚СЊ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22263,7 +22263,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "2",
-        "object_repr": "Сложно искать и создавать визуал для постов",
+        "object_repr": "РЎР»РѕР¶РЅРѕ РёСЃРєР°С‚СЊ Рё СЃРѕР·РґР°РІР°С‚СЊ РІРёР·СѓР°Р» РґР»СЏ РїРѕСЃС‚РѕРІ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22276,7 +22276,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "1",
-        "object_repr": "Визуальное оформление постов – это важно",
+        "object_repr": "Р’РёР·СѓР°Р»СЊРЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ РїРѕСЃС‚РѕРІ вЂ“ СЌС‚Рѕ РІР°Р¶РЅРѕ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22289,7 +22289,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "4",
-        "object_repr": "Какие есть универсальные форматы для визуала",
+        "object_repr": "РљР°РєРёРµ РµСЃС‚СЊ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Рµ С„РѕСЂРјР°С‚С‹ РґР»СЏ РІРёР·СѓР°Р»Р°",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22302,7 +22302,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "3",
-        "object_repr": "Как сохранить узнаваемость",
+        "object_repr": "РљР°Рє СЃРѕС…СЂР°РЅРёС‚СЊ СѓР·РЅР°РІР°РµРјРѕСЃС‚СЊ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22315,7 +22315,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "2",
-        "object_repr": "Сложно искать и создавать визуал для постов",
+        "object_repr": "РЎР»РѕР¶РЅРѕ РёСЃРєР°С‚СЊ Рё СЃРѕР·РґР°РІР°С‚СЊ РІРёР·СѓР°Р» РґР»СЏ РїРѕСЃС‚РѕРІ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22328,7 +22328,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "1",
-        "object_repr": "Визуальное оформление постов – это важно",
+        "object_repr": "Р’РёР·СѓР°Р»СЊРЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ РїРѕСЃС‚РѕРІ вЂ“ СЌС‚Рѕ РІР°Р¶РЅРѕ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0441\\u044b\\u043b\\u043a\\u0430 \\u0434\\u043b\\u044f \\u043f\\u043e\\u0441\\u0442\\u0430\"]}}]"
     }
@@ -22354,7 +22354,7 @@
         "user": 20,
         "content_type": 10,
         "object_id": "3",
-        "object_repr": "Как сохранить узнаваемость",
+        "object_repr": "РљР°Рє СЃРѕС…СЂР°РЅРёС‚СЊ СѓР·РЅР°РІР°РµРјРѕСЃС‚СЊ",
         "action_flag": 2,
         "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
     }
@@ -22569,7 +22569,7 @@
     "model": "auth.permission",
     "pk": 21,
     "fields": {
-        "name": "Can add Клиент",
+        "name": "Can add РљР»РёРµРЅС‚",
         "content_type": 7,
         "codename": "add_client"
     }
@@ -22578,7 +22578,7 @@
     "model": "auth.permission",
     "pk": 22,
     "fields": {
-        "name": "Can change Клиент",
+        "name": "Can change РљР»РёРµРЅС‚",
         "content_type": 7,
         "codename": "change_client"
     }
@@ -22587,7 +22587,7 @@
     "model": "auth.permission",
     "pk": 23,
     "fields": {
-        "name": "Can delete Клиент",
+        "name": "Can delete РљР»РёРµРЅС‚",
         "content_type": 7,
         "codename": "delete_client"
     }
@@ -22596,7 +22596,7 @@
     "model": "auth.permission",
     "pk": 24,
     "fields": {
-        "name": "Can view Клиент",
+        "name": "Can view РљР»РёРµРЅС‚",
         "content_type": 7,
         "codename": "view_client"
     }
@@ -22605,7 +22605,7 @@
     "model": "auth.permission",
     "pk": 25,
     "fields": {
-        "name": "Can add Рассылка",
+        "name": "Can add Р Р°СЃСЃС‹Р»РєР°",
         "content_type": 8,
         "codename": "add_mailing"
     }
@@ -22614,7 +22614,7 @@
     "model": "auth.permission",
     "pk": 26,
     "fields": {
-        "name": "Can change Рассылка",
+        "name": "Can change Р Р°СЃСЃС‹Р»РєР°",
         "content_type": 8,
         "codename": "change_mailing"
     }
@@ -22623,7 +22623,7 @@
     "model": "auth.permission",
     "pk": 27,
     "fields": {
-        "name": "Can delete Рассылка",
+        "name": "Can delete Р Р°СЃСЃС‹Р»РєР°",
         "content_type": 8,
         "codename": "delete_mailing"
     }
@@ -22632,7 +22632,7 @@
     "model": "auth.permission",
     "pk": 28,
     "fields": {
-        "name": "Can view Рассылка",
+        "name": "Can view Р Р°СЃСЃС‹Р»РєР°",
         "content_type": 8,
         "codename": "view_mailing"
     }
@@ -22641,7 +22641,7 @@
     "model": "auth.permission",
     "pk": 29,
     "fields": {
-        "name": "Can add Попытка",
+        "name": "Can add РџРѕРїС‹С‚РєР°",
         "content_type": 9,
         "codename": "add_attempt"
     }
@@ -22650,7 +22650,7 @@
     "model": "auth.permission",
     "pk": 30,
     "fields": {
-        "name": "Can change Попытка",
+        "name": "Can change РџРѕРїС‹С‚РєР°",
         "content_type": 9,
         "codename": "change_attempt"
     }
@@ -22659,7 +22659,7 @@
     "model": "auth.permission",
     "pk": 31,
     "fields": {
-        "name": "Can delete Попытка",
+        "name": "Can delete РџРѕРїС‹С‚РєР°",
         "content_type": 9,
         "codename": "delete_attempt"
     }
@@ -22668,7 +22668,7 @@
     "model": "auth.permission",
     "pk": 32,
     "fields": {
-        "name": "Can view Попытка",
+        "name": "Can view РџРѕРїС‹С‚РєР°",
         "content_type": 9,
         "codename": "view_attempt"
     }
@@ -22677,7 +22677,7 @@
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-        "name": "Can add Пост",
+        "name": "Can add РџРѕСЃС‚",
         "content_type": 10,
         "codename": "add_blog"
     }
@@ -22686,7 +22686,7 @@
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-        "name": "Can change Пост",
+        "name": "Can change РџРѕСЃС‚",
         "content_type": 10,
         "codename": "change_blog"
     }
@@ -22695,7 +22695,7 @@
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-        "name": "Can delete Пост",
+        "name": "Can delete РџРѕСЃС‚",
         "content_type": 10,
         "codename": "delete_blog"
     }
@@ -22704,7 +22704,7 @@
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-        "name": "Can view Пост",
+        "name": "Can view РџРѕСЃС‚",
         "content_type": 10,
         "codename": "view_blog"
     }
@@ -22713,7 +22713,7 @@
     "model": "auth.permission",
     "pk": 37,
     "fields": {
-        "name": "Can add Категория",
+        "name": "Can add РљР°С‚РµРіРѕСЂРёСЏ",
         "content_type": 11,
         "codename": "add_category"
     }
@@ -22722,7 +22722,7 @@
     "model": "auth.permission",
     "pk": 38,
     "fields": {
-        "name": "Can change Категория",
+        "name": "Can change РљР°С‚РµРіРѕСЂРёСЏ",
         "content_type": 11,
         "codename": "change_category"
     }
@@ -22731,7 +22731,7 @@
     "model": "auth.permission",
     "pk": 39,
     "fields": {
-        "name": "Can delete Категория",
+        "name": "Can delete РљР°С‚РµРіРѕСЂРёСЏ",
         "content_type": 11,
         "codename": "delete_category"
     }
@@ -22740,7 +22740,7 @@
     "model": "auth.permission",
     "pk": 40,
     "fields": {
-        "name": "Can view Категория",
+        "name": "Can view РљР°С‚РµРіРѕСЂРёСЏ",
         "content_type": 11,
         "codename": "view_category"
     }
@@ -22749,7 +22749,7 @@
     "model": "auth.permission",
     "pk": 41,
     "fields": {
-        "name": "Can add Продукт",
+        "name": "Can add РџСЂРѕРґСѓРєС‚",
         "content_type": 12,
         "codename": "add_product"
     }
@@ -22758,7 +22758,7 @@
     "model": "auth.permission",
     "pk": 42,
     "fields": {
-        "name": "Can change Продукт",
+        "name": "Can change РџСЂРѕРґСѓРєС‚",
         "content_type": 12,
         "codename": "change_product"
     }
@@ -22767,7 +22767,7 @@
     "model": "auth.permission",
     "pk": 43,
     "fields": {
-        "name": "Can delete Продукт",
+        "name": "Can delete РџСЂРѕРґСѓРєС‚",
         "content_type": 12,
         "codename": "delete_product"
     }
@@ -22776,7 +22776,7 @@
     "model": "auth.permission",
     "pk": 44,
     "fields": {
-        "name": "Can view Продукт",
+        "name": "Can view РџСЂРѕРґСѓРєС‚",
         "content_type": 12,
         "codename": "view_product"
     }
@@ -22785,7 +22785,7 @@
     "model": "auth.permission",
     "pk": 45,
     "fields": {
-        "name": "Can add Версия",
+        "name": "Can add Р’РµСЂСЃРёСЏ",
         "content_type": 13,
         "codename": "add_version"
     }
@@ -22794,7 +22794,7 @@
     "model": "auth.permission",
     "pk": 46,
     "fields": {
-        "name": "Can change Версия",
+        "name": "Can change Р’РµСЂСЃРёСЏ",
         "content_type": 13,
         "codename": "change_version"
     }
@@ -22803,7 +22803,7 @@
     "model": "auth.permission",
     "pk": 47,
     "fields": {
-        "name": "Can delete Версия",
+        "name": "Can delete Р’РµСЂСЃРёСЏ",
         "content_type": 13,
         "codename": "delete_version"
     }
@@ -22812,7 +22812,7 @@
     "model": "auth.permission",
     "pk": 48,
     "fields": {
-        "name": "Can view Версия",
+        "name": "Can view Р’РµСЂСЃРёСЏ",
         "content_type": 13,
         "codename": "view_version"
     }
@@ -23239,8 +23239,8 @@
         "stop_datetime": "2024-07-19T21:07:31Z",
         "periodicity": "hour",
         "status": "started",
-        "subject": "Grog512new рассылка",
-        "body": "Grog512new рассылка",
+        "subject": "Grog512new СЂР°СЃСЃС‹Р»РєР°",
+        "body": "Grog512new СЂР°СЃСЃС‹Р»РєР°",
         "client": [
             3
         ]
@@ -23254,7 +23254,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:29:34.574Z",
         "status": true,
-        "server_response": "Успешно отправлено Grog512new@mail.ru "
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Grog512new@mail.ru "
     }
 },
 {
@@ -23265,7 +23265,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:30:38.645Z",
         "status": true,
-        "server_response": "Успешно отправлено Grog512new@mail.ru4 "
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Grog512new@mail.ru4 "
     }
 },
 {
@@ -23276,7 +23276,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:31:43.533Z",
         "status": true,
-        "server_response": "Успешно отправлено Grog512new@mail.ru4 "
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Grog512new@mail.ru4 "
     }
 },
 {
@@ -23287,7 +23287,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:32:48.930Z",
         "status": true,
-        "server_response": "Успешно отправлено Grog512new@mail.ru4 "
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Grog512new@mail.ru4 "
     }
 },
 {
@@ -23298,7 +23298,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:33:53.732Z",
         "status": true,
-        "server_response": "Успешно отправлено Grog512new@mail.ru4 "
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ Grog512new@mail.ru4 "
     }
 },
 {
@@ -23309,7 +23309,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:35:33.574Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23320,7 +23320,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:36:37.712Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23331,7 +23331,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:37:42.808Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23342,7 +23342,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:38:47.859Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23353,7 +23353,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:40:09.497Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23364,7 +23364,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:41:13.438Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23375,7 +23375,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:42:18.578Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23386,7 +23386,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:43:23.524Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23397,7 +23397,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:44:28.443Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23408,7 +23408,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:45:33.438Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23419,7 +23419,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:46:38.497Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23430,7 +23430,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:47:41.597Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23441,7 +23441,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:48:46.007Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23452,7 +23452,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:49:50.748Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23463,7 +23463,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:50:55.870Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23474,7 +23474,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:52:00.820Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23485,7 +23485,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:53:05.674Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23496,7 +23496,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:54:10.719Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23507,7 +23507,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:55:15.907Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23518,7 +23518,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:56:20.784Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23529,7 +23529,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:57:25.840Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23540,7 +23540,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:58:30.767Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23551,7 +23551,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T21:59:35.720Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23562,7 +23562,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T22:00:40.773Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23573,7 +23573,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T22:01:43.540Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23584,7 +23584,7 @@
         "client": 3,
         "attempt_date": "2024-07-15T23:01:47.908Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23595,7 +23595,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T00:01:52.915Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23606,7 +23606,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T01:01:57.838Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23617,7 +23617,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T02:02:02.883Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23628,7 +23628,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T03:02:07.878Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23639,7 +23639,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T04:02:12.857Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23650,7 +23650,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T05:02:17.754Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23661,7 +23661,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T06:02:22.993Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23672,7 +23672,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T07:02:28.260Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23683,7 +23683,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T08:02:32.843Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23694,7 +23694,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T09:02:38.055Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23705,7 +23705,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T10:02:42.934Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23716,7 +23716,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T11:02:48.016Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23727,7 +23727,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T12:02:52.870Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23738,7 +23738,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T13:02:57.847Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23749,7 +23749,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T14:03:02.798Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23760,7 +23760,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T15:03:07.916Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23771,7 +23771,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T16:03:12.778Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23782,7 +23782,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T17:03:17.875Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23793,7 +23793,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T18:03:22.867Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23804,7 +23804,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T19:03:27.793Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23815,7 +23815,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T20:03:32.673Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23826,7 +23826,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T21:03:37.898Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23837,7 +23837,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T22:03:42.880Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23848,7 +23848,7 @@
         "client": 3,
         "attempt_date": "2024-07-16T23:03:47.762Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23859,7 +23859,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T00:03:53.044Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23870,7 +23870,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T01:03:58.046Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23881,7 +23881,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T02:04:02.857Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23892,7 +23892,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T03:04:07.990Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23903,7 +23903,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T04:04:13.093Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23914,7 +23914,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T05:04:17.851Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23925,7 +23925,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T06:04:23.152Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23936,7 +23936,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T07:04:28.036Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23947,7 +23947,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T08:04:33.072Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23958,7 +23958,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T09:04:38.177Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23969,7 +23969,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T10:04:43.066Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23980,7 +23980,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T11:04:48.818Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -23991,7 +23991,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T12:04:52.889Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24002,7 +24002,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T13:04:58.035Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24013,7 +24013,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T14:05:03.097Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24024,7 +24024,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T15:05:07.680Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24035,7 +24035,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T16:05:12.953Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24046,7 +24046,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T17:05:17.941Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24057,7 +24057,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T18:05:22.990Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24068,7 +24068,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T19:05:27.769Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24079,7 +24079,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T20:05:32.994Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24090,7 +24090,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T21:05:37.790Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24101,7 +24101,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T22:05:42.636Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24112,7 +24112,7 @@
         "client": 3,
         "attempt_date": "2024-07-17T23:05:47.675Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24123,7 +24123,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T00:05:52.562Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24134,7 +24134,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T01:05:58.095Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24145,7 +24145,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T02:06:02.980Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24156,7 +24156,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T03:06:07.896Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24167,7 +24167,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T04:06:12.796Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24178,7 +24178,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T05:06:17.901Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24189,7 +24189,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T06:06:22.912Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24200,7 +24200,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T07:06:27.856Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24211,7 +24211,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T08:06:32.772Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24222,7 +24222,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T09:06:37.648Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24233,7 +24233,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T10:06:42.840Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24244,7 +24244,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T11:06:48.171Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24255,7 +24255,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T12:06:53.064Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24266,7 +24266,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T13:06:57.892Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24277,7 +24277,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T14:07:02.937Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24288,7 +24288,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T15:07:08.106Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24299,7 +24299,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T16:07:12.735Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24310,7 +24310,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T17:07:17.864Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24321,7 +24321,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T18:07:23.001Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24332,7 +24332,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T19:07:27.751Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24343,7 +24343,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T20:07:32.778Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24354,7 +24354,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T21:07:37.905Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24365,7 +24365,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T22:07:42.807Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24376,7 +24376,7 @@
         "client": 3,
         "attempt_date": "2024-07-18T23:07:47.799Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24387,7 +24387,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T00:07:52.873Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24398,7 +24398,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T01:07:57.754Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24409,7 +24409,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T02:08:02.775Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24420,7 +24420,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T03:08:07.718Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24431,7 +24431,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T04:08:12.872Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24442,7 +24442,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T05:08:17.856Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24453,7 +24453,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T06:08:22.850Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24464,7 +24464,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T07:08:27.867Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24475,7 +24475,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T08:08:33.063Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24486,7 +24486,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T09:08:37.795Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24497,7 +24497,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T10:08:42.946Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24508,7 +24508,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T11:08:47.927Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24519,7 +24519,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T12:08:52.772Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24530,7 +24530,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T13:08:57.683Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24541,7 +24541,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T14:09:02.779Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24552,7 +24552,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T15:09:08.082Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24563,7 +24563,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T16:09:12.921Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24574,7 +24574,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T17:09:17.872Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24585,7 +24585,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T18:09:22.587Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24596,7 +24596,7 @@
         "client": 3,
         "attempt_date": "2024-07-19T19:09:27.761Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
@@ -24607,15 +24607,15 @@
         "client": 3,
         "attempt_date": "2024-07-19T20:09:32.853Z",
         "status": true,
-        "server_response": "Успешно отправлено"
+        "server_response": "РЈСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ"
     }
 },
 {
     "model": "blog.blog",
     "pk": 1,
     "fields": {
-        "title": "Визуальное оформление постов – это важно",
-        "content": "Почему визуальное оформление постов – это важно\r\nКаким текстом вы наполнили пост, аудитория может не заметить и не запомнить, а интересные, цепляющие изображения способны закрепиться в их памяти.\r\n\r\nЧтобы успешно продвигать свой продукт в соцсетях, лучше всего создать две картинки. Одну – при помощи текста, а другую – с помощью визуала, используя фотокамеру и редакторы. Таким приемом вы привлечете обе категории людей – тех, кто воспринимает информацию через описание, и тех, кто привык воспринимать визуально.\r\n\r\nПубликации с картинками привлекают больше пользователей, чем публикации только с текстом. Некоторые пользователи просто не будут читать пост, если он будет без визуального сопровождения. \r\n\r\nКачественная картинка, которая четко вписывается в контент, привлечет внимание пользователя. И, в сочетании с правильным текстом, подтолкнет к действию. \r\n\r\nИменно поэтому так важна гармония текста и визуала – она помогает повысить вовлеченность и конверсию.",
+        "title": "Р’РёР·СѓР°Р»СЊРЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ РїРѕСЃС‚РѕРІ вЂ“ СЌС‚Рѕ РІР°Р¶РЅРѕ",
+        "content": "РџРѕС‡РµРјСѓ РІРёР·СѓР°Р»СЊРЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ РїРѕСЃС‚РѕРІ вЂ“ СЌС‚Рѕ РІР°Р¶РЅРѕ\r\nРљР°РєРёРј С‚РµРєСЃС‚РѕРј РІС‹ РЅР°РїРѕР»РЅРёР»Рё РїРѕСЃС‚, Р°СѓРґРёС‚РѕСЂРёСЏ РјРѕР¶РµС‚ РЅРµ Р·Р°РјРµС‚РёС‚СЊ Рё РЅРµ Р·Р°РїРѕРјРЅРёС‚СЊ, Р° РёРЅС‚РµСЂРµСЃРЅС‹Рµ, С†РµРїР»СЏСЋС‰РёРµ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ СЃРїРѕСЃРѕР±РЅС‹ Р·Р°РєСЂРµРїРёС‚СЊСЃСЏ РІ РёС… РїР°РјСЏС‚Рё.\r\n\r\nР§С‚РѕР±С‹ СѓСЃРїРµС€РЅРѕ РїСЂРѕРґРІРёРіР°С‚СЊ СЃРІРѕР№ РїСЂРѕРґСѓРєС‚ РІ СЃРѕС†СЃРµС‚СЏС…, Р»СѓС‡С€Рµ РІСЃРµРіРѕ СЃРѕР·РґР°С‚СЊ РґРІРµ РєР°СЂС‚РёРЅРєРё. РћРґРЅСѓ вЂ“ РїСЂРё РїРѕРјРѕС‰Рё С‚РµРєСЃС‚Р°, Р° РґСЂСѓРіСѓСЋ вЂ“ СЃ РїРѕРјРѕС‰СЊСЋ РІРёР·СѓР°Р»Р°, РёСЃРїРѕР»СЊР·СѓСЏ С„РѕС‚РѕРєР°РјРµСЂСѓ Рё СЂРµРґР°РєС‚РѕСЂС‹. РўР°РєРёРј РїСЂРёРµРјРѕРј РІС‹ РїСЂРёРІР»РµС‡РµС‚Рµ РѕР±Рµ РєР°С‚РµРіРѕСЂРёРё Р»СЋРґРµР№ вЂ“ С‚РµС…, РєС‚Рѕ РІРѕСЃРїСЂРёРЅРёРјР°РµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ С‡РµСЂРµР· РѕРїРёСЃР°РЅРёРµ, Рё С‚РµС…, РєС‚Рѕ РїСЂРёРІС‹Рє РІРѕСЃРїСЂРёРЅРёРјР°С‚СЊ РІРёР·СѓР°Р»СЊРЅРѕ.\r\n\r\nРџСѓР±Р»РёРєР°С†РёРё СЃ РєР°СЂС‚РёРЅРєР°РјРё РїСЂРёРІР»РµРєР°СЋС‚ Р±РѕР»СЊС€Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№, С‡РµРј РїСѓР±Р»РёРєР°С†РёРё С‚РѕР»СЊРєРѕ СЃ С‚РµРєСЃС‚РѕРј. РќРµРєРѕС‚РѕСЂС‹Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё РїСЂРѕСЃС‚Рѕ РЅРµ Р±СѓРґСѓС‚ С‡РёС‚Р°С‚СЊ РїРѕСЃС‚, РµСЃР»Рё РѕРЅ Р±СѓРґРµС‚ Р±РµР· РІРёР·СѓР°Р»СЊРЅРѕРіРѕ СЃРѕРїСЂРѕРІРѕР¶РґРµРЅРёСЏ. \r\n\r\nРљР°С‡РµСЃС‚РІРµРЅРЅР°СЏ РєР°СЂС‚РёРЅРєР°, РєРѕС‚РѕСЂР°СЏ С‡РµС‚РєРѕ РІРїРёСЃС‹РІР°РµС‚СЃСЏ РІ РєРѕРЅС‚РµРЅС‚, РїСЂРёРІР»РµС‡РµС‚ РІРЅРёРјР°РЅРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ. Р, РІ СЃРѕС‡РµС‚Р°РЅРёРё СЃ РїСЂР°РІРёР»СЊРЅС‹Рј С‚РµРєСЃС‚РѕРј, РїРѕРґС‚РѕР»РєРЅРµС‚ Рє РґРµР№СЃС‚РІРёСЋ. \r\n\r\nРРјРµРЅРЅРѕ РїРѕСЌС‚РѕРјСѓ С‚Р°Рє РІР°Р¶РЅР° РіР°СЂРјРѕРЅРёСЏ С‚РµРєСЃС‚Р° Рё РІРёР·СѓР°Р»Р° вЂ“ РѕРЅР° РїРѕРјРѕРіР°РµС‚ РїРѕРІС‹СЃРёС‚СЊ РІРѕРІР»РµС‡РµРЅРЅРѕСЃС‚СЊ Рё РєРѕРЅРІРµСЂСЃРёСЋ.",
         "preview_image": "blog/Screenshot_13.jpg",
         "created_at": "2024-07-06T04:04:54.989Z",
         "is_published": true,
@@ -24626,8 +24626,8 @@
     "model": "blog.blog",
     "pk": 2,
     "fields": {
-        "title": "Сложно искать и создавать визуал для постов",
-        "content": "Любой визуал в постах должен быть конкурентоспособным, и в этом основная сложность. Одновременно с вашими материалами публикуются сотни других постов, картинок, видео и Историй. Полсекунды, потеря интереса – и ваш пост затеряется в море других, пользователь пойдет дальше. \r\n\r\nВот несколько советов по созданию конкурентоспособного визуала:\r\n\r\nОпирайтесь на контекст. Подбирайте фото или создавайте картинки, основываясь на содержании поста. Если изображение не связано с текстом, это может оттолкнуть пользователя.\r\nАнализируйте целевую аудиторию. Отталкивайтесь от своей ЦА, ее болей, интересов, слабостей и желаний. Проведите анализ, подбирайте картинки, потенциально интересные вашей аудитории. Затем анализируйте результаты и, при необходимости, ищите дальше.\r\nОткажитесь от стоковых фото. Пластиковые счастливые лица мало кого могут заинтересовать, они крайне редко соотносятся с вашей реальной ЦА. Кроме того, многие пользователи выработали на них иммунитет и просто не замечают посты со стоковыми фото. \r\nВыработайте свой фирменный стиль. Оформление должно быть не только уникальным, но и узнаваемым. В идеале – чтобы подписчик видел пост и сразу понимал, что это ваша компания.\r\nИзучите конкурентов. Посмотрите, какие приемы используют ваши конкуренты. Это вдохновит вас на новый подход к визуалу и поможет избежать ошибок.",
+        "title": "РЎР»РѕР¶РЅРѕ РёСЃРєР°С‚СЊ Рё СЃРѕР·РґР°РІР°С‚СЊ РІРёР·СѓР°Р» РґР»СЏ РїРѕСЃС‚РѕРІ",
+        "content": "Р›СЋР±РѕР№ РІРёР·СѓР°Р» РІ РїРѕСЃС‚Р°С… РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РєРѕРЅРєСѓСЂРµРЅС‚РѕСЃРїРѕСЃРѕР±РЅС‹Рј, Рё РІ СЌС‚РѕРј РѕСЃРЅРѕРІРЅР°СЏ СЃР»РѕР¶РЅРѕСЃС‚СЊ. РћРґРЅРѕРІСЂРµРјРµРЅРЅРѕ СЃ РІР°С€РёРјРё РјР°С‚РµСЂРёР°Р»Р°РјРё РїСѓР±Р»РёРєСѓСЋС‚СЃСЏ СЃРѕС‚РЅРё РґСЂСѓРіРёС… РїРѕСЃС‚РѕРІ, РєР°СЂС‚РёРЅРѕРє, РІРёРґРµРѕ Рё РСЃС‚РѕСЂРёР№. РџРѕР»СЃРµРєСѓРЅРґС‹, РїРѕС‚РµСЂСЏ РёРЅС‚РµСЂРµСЃР° вЂ“ Рё РІР°С€ РїРѕСЃС‚ Р·Р°С‚РµСЂСЏРµС‚СЃСЏ РІ РјРѕСЂРµ РґСЂСѓРіРёС…, РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РїРѕР№РґРµС‚ РґР°Р»СЊС€Рµ. \r\n\r\nР’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ СЃРѕРІРµС‚РѕРІ РїРѕ СЃРѕР·РґР°РЅРёСЋ РєРѕРЅРєСѓСЂРµРЅС‚РѕСЃРїРѕСЃРѕР±РЅРѕРіРѕ РІРёР·СѓР°Р»Р°:\r\n\r\nРћРїРёСЂР°Р№С‚РµСЃСЊ РЅР° РєРѕРЅС‚РµРєСЃС‚. РџРѕРґР±РёСЂР°Р№С‚Рµ С„РѕС‚Рѕ РёР»Рё СЃРѕР·РґР°РІР°Р№С‚Рµ РєР°СЂС‚РёРЅРєРё, РѕСЃРЅРѕРІС‹РІР°СЏСЃСЊ РЅР° СЃРѕРґРµСЂР¶Р°РЅРёРё РїРѕСЃС‚Р°. Р•СЃР»Рё РёР·РѕР±СЂР°Р¶РµРЅРёРµ РЅРµ СЃРІСЏР·Р°РЅРѕ СЃ С‚РµРєСЃС‚РѕРј, СЌС‚Рѕ РјРѕР¶РµС‚ РѕС‚С‚РѕР»РєРЅСѓС‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ.\r\nРђРЅР°Р»РёР·РёСЂСѓР№С‚Рµ С†РµР»РµРІСѓСЋ Р°СѓРґРёС‚РѕСЂРёСЋ. РћС‚С‚Р°Р»РєРёРІР°Р№С‚РµСЃСЊ РѕС‚ СЃРІРѕРµР№ Р¦Рђ, РµРµ Р±РѕР»РµР№, РёРЅС‚РµСЂРµСЃРѕРІ, СЃР»Р°Р±РѕСЃС‚РµР№ Рё Р¶РµР»Р°РЅРёР№. РџСЂРѕРІРµРґРёС‚Рµ Р°РЅР°Р»РёР·, РїРѕРґР±РёСЂР°Р№С‚Рµ РєР°СЂС‚РёРЅРєРё, РїРѕС‚РµРЅС†РёР°Р»СЊРЅРѕ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РІР°С€РµР№ Р°СѓРґРёС‚РѕСЂРёРё. Р—Р°С‚РµРј Р°РЅР°Р»РёР·РёСЂСѓР№С‚Рµ СЂРµР·СѓР»СЊС‚Р°С‚С‹ Рё, РїСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё, РёС‰РёС‚Рµ РґР°Р»СЊС€Рµ.\r\nРћС‚РєР°Р¶РёС‚РµСЃСЊ РѕС‚ СЃС‚РѕРєРѕРІС‹С… С„РѕС‚Рѕ. РџР»Р°СЃС‚РёРєРѕРІС‹Рµ СЃС‡Р°СЃС‚Р»РёРІС‹Рµ Р»РёС†Р° РјР°Р»Рѕ РєРѕРіРѕ РјРѕРіСѓС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ, РѕРЅРё РєСЂР°Р№РЅРµ СЂРµРґРєРѕ СЃРѕРѕС‚РЅРѕСЃСЏС‚СЃСЏ СЃ РІР°С€РµР№ СЂРµР°Р»СЊРЅРѕР№ Р¦Рђ. РљСЂРѕРјРµ С‚РѕРіРѕ, РјРЅРѕРіРёРµ РїРѕР»СЊР·РѕРІР°С‚РµР»Рё РІС‹СЂР°Р±РѕС‚Р°Р»Рё РЅР° РЅРёС… РёРјРјСѓРЅРёС‚РµС‚ Рё РїСЂРѕСЃС‚Рѕ РЅРµ Р·Р°РјРµС‡Р°СЋС‚ РїРѕСЃС‚С‹ СЃРѕ СЃС‚РѕРєРѕРІС‹РјРё С„РѕС‚Рѕ. \r\nР’С‹СЂР°Р±РѕС‚Р°Р№С‚Рµ СЃРІРѕР№ С„РёСЂРјРµРЅРЅС‹Р№ СЃС‚РёР»СЊ. РћС„РѕСЂРјР»РµРЅРёРµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ С‚РѕР»СЊРєРѕ СѓРЅРёРєР°Р»СЊРЅС‹Рј, РЅРѕ Рё СѓР·РЅР°РІР°РµРјС‹Рј. Р’ РёРґРµР°Р»Рµ вЂ“ С‡С‚РѕР±С‹ РїРѕРґРїРёСЃС‡РёРє РІРёРґРµР» РїРѕСЃС‚ Рё СЃСЂР°Р·Сѓ РїРѕРЅРёРјР°Р», С‡С‚Рѕ СЌС‚Рѕ РІР°С€Р° РєРѕРјРїР°РЅРёСЏ.\r\nРР·СѓС‡РёС‚Рµ РєРѕРЅРєСѓСЂРµРЅС‚РѕРІ. РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєР°РєРёРµ РїСЂРёРµРјС‹ РёСЃРїРѕР»СЊР·СѓСЋС‚ РІР°С€Рё РєРѕРЅРєСѓСЂРµРЅС‚С‹. Р­С‚Рѕ РІРґРѕС…РЅРѕРІРёС‚ РІР°СЃ РЅР° РЅРѕРІС‹Р№ РїРѕРґС…РѕРґ Рє РІРёР·СѓР°Р»Сѓ Рё РїРѕРјРѕР¶РµС‚ РёР·Р±РµР¶Р°С‚СЊ РѕС€РёР±РѕРє.",
         "preview_image": "blog/Screenshot_14.jpg",
         "created_at": "2024-07-06T04:05:34.769Z",
         "is_published": true,
@@ -24638,8 +24638,8 @@
     "model": "blog.blog",
     "pk": 3,
     "fields": {
-        "title": "Как сохранить узнаваемость",
-        "content": "Итак, картинки стали конкурентоспособными. Но теперь важно закрепить внимание и помочь людям постоянно помнить о вас. Как это сделать:\r\n\r\nПродумайте определенный шрифт и цветовую палитру. Выберите несколько основных цветов и используйте их для оформления каждого поста. \r\nПридерживайтесь ToV. Да, кажется, что ToV – это что-то про текст и голос бренда, но в визуале это тоже может быть. Одна компания выбирает для себя минимализм и все посты сопровождает картинками с минимумом элементов. Другая стремится в каждый пост добавить юмора и мемов, это тоже узнаваемо.\r\nЗадействуйте персонажа. Если у вашей компании есть персонаж, который ассоциируется с вами, как у Пикабу печенька или пчела у Билайна, задействуйте его почаще, чтобы люди запомнили.\r\nПросто выберите свою стратегию и придерживайтесь ее. Это обязательно даст свои результаты.",
+        "title": "РљР°Рє СЃРѕС…СЂР°РЅРёС‚СЊ СѓР·РЅР°РІР°РµРјРѕСЃС‚СЊ",
+        "content": "РС‚Р°Рє, РєР°СЂС‚РёРЅРєРё СЃС‚Р°Р»Рё РєРѕРЅРєСѓСЂРµРЅС‚РѕСЃРїРѕСЃРѕР±РЅС‹РјРё. РќРѕ С‚РµРїРµСЂСЊ РІР°Р¶РЅРѕ Р·Р°РєСЂРµРїРёС‚СЊ РІРЅРёРјР°РЅРёРµ Рё РїРѕРјРѕС‡СЊ Р»СЋРґСЏРј РїРѕСЃС‚РѕСЏРЅРЅРѕ РїРѕРјРЅРёС‚СЊ Рѕ РІР°СЃ. РљР°Рє СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ:\r\n\r\nРџСЂРѕРґСѓРјР°Р№С‚Рµ РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ С€СЂРёС„С‚ Рё С†РІРµС‚РѕРІСѓСЋ РїР°Р»РёС‚СЂСѓ. Р’С‹Р±РµСЂРёС‚Рµ РЅРµСЃРєРѕР»СЊРєРѕ РѕСЃРЅРѕРІРЅС‹С… С†РІРµС‚РѕРІ Рё РёСЃРїРѕР»СЊР·СѓР№С‚Рµ РёС… РґР»СЏ РѕС„РѕСЂРјР»РµРЅРёСЏ РєР°Р¶РґРѕРіРѕ РїРѕСЃС‚Р°. \r\nРџСЂРёРґРµСЂР¶РёРІР°Р№С‚РµСЃСЊ ToV. Р”Р°, РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ ToV вЂ“ СЌС‚Рѕ С‡С‚Рѕ-С‚Рѕ РїСЂРѕ С‚РµРєСЃС‚ Рё РіРѕР»РѕСЃ Р±СЂРµРЅРґР°, РЅРѕ РІ РІРёР·СѓР°Р»Рµ СЌС‚Рѕ С‚РѕР¶Рµ РјРѕР¶РµС‚ Р±С‹С‚СЊ. РћРґРЅР° РєРѕРјРїР°РЅРёСЏ РІС‹Р±РёСЂР°РµС‚ РґР»СЏ СЃРµР±СЏ РјРёРЅРёРјР°Р»РёР·Рј Рё РІСЃРµ РїРѕСЃС‚С‹ СЃРѕРїСЂРѕРІРѕР¶РґР°РµС‚ РєР°СЂС‚РёРЅРєР°РјРё СЃ РјРёРЅРёРјСѓРјРѕРј СЌР»РµРјРµРЅС‚РѕРІ. Р”СЂСѓРіР°СЏ СЃС‚СЂРµРјРёС‚СЃСЏ РІ РєР°Р¶РґС‹Р№ РїРѕСЃС‚ РґРѕР±Р°РІРёС‚СЊ СЋРјРѕСЂР° Рё РјРµРјРѕРІ, СЌС‚Рѕ С‚РѕР¶Рµ СѓР·РЅР°РІР°РµРјРѕ.\r\nР—Р°РґРµР№СЃС‚РІСѓР№С‚Рµ РїРµСЂСЃРѕРЅР°Р¶Р°. Р•СЃР»Рё Сѓ РІР°С€РµР№ РєРѕРјРїР°РЅРёРё РµСЃС‚СЊ РїРµСЂСЃРѕРЅР°Р¶, РєРѕС‚РѕСЂС‹Р№ Р°СЃСЃРѕС†РёРёСЂСѓРµС‚СЃСЏ СЃ РІР°РјРё, РєР°Рє Сѓ РџРёРєР°Р±Сѓ РїРµС‡РµРЅСЊРєР° РёР»Рё РїС‡РµР»Р° Сѓ Р‘РёР»Р°Р№РЅР°, Р·Р°РґРµР№СЃС‚РІСѓР№С‚Рµ РµРіРѕ РїРѕС‡Р°С‰Рµ, С‡С‚РѕР±С‹ Р»СЋРґРё Р·Р°РїРѕРјРЅРёР»Рё.\r\nРџСЂРѕСЃС‚Рѕ РІС‹Р±РµСЂРёС‚Рµ СЃРІРѕСЋ СЃС‚СЂР°С‚РµРіРёСЋ Рё РїСЂРёРґРµСЂР¶РёРІР°Р№С‚РµСЃСЊ РµРµ. Р­С‚Рѕ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР°СЃС‚ СЃРІРѕРё СЂРµР·СѓР»СЊС‚Р°С‚С‹.",
         "preview_image": "blog/Screenshot_15.jpg",
         "created_at": "2024-07-06T04:05:50.488Z",
         "is_published": true,
@@ -24650,8 +24650,8 @@
     "model": "blog.blog",
     "pk": 4,
     "fields": {
-        "title": "Какие есть универсальные форматы для визуала",
-        "content": "Если сильно обобщить, хорошо работают 3 группы визуала:\r\n\r\nКрасивые фото. Подписчик смотрит и хочет так же. Формат хорошо работает в нишах, где результат эстетичен и приятен. Например, на такой картинке для рекламного поста могут быть часы на руке, гармонично расположенные в кадре. \r\nКартинка с текстом. Должна попадать в боль ЦА, давать какую-то информацию, отвечать на вопрос или задавать его. В таких картинках важно, чтобы заголовок был достаточно крупным и привлекал внимание в потоке другой информации в ленте пользователя.\r\nМемы. Не нужно постить шаблонные шутки за 300. Предпочтителен оригинальный юмор, понятный вашей аудитории.",
+        "title": "РљР°РєРёРµ РµСЃС‚СЊ СѓРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Рµ С„РѕСЂРјР°С‚С‹ РґР»СЏ РІРёР·СѓР°Р»Р°",
+        "content": "Р•СЃР»Рё СЃРёР»СЊРЅРѕ РѕР±РѕР±С‰РёС‚СЊ, С…РѕСЂРѕС€Рѕ СЂР°Р±РѕС‚Р°СЋС‚ 3 РіСЂСѓРїРїС‹ РІРёР·СѓР°Р»Р°:\r\n\r\nРљСЂР°СЃРёРІС‹Рµ С„РѕС‚Рѕ. РџРѕРґРїРёСЃС‡РёРє СЃРјРѕС‚СЂРёС‚ Рё С…РѕС‡РµС‚ С‚Р°Рє Р¶Рµ. Р¤РѕСЂРјР°С‚ С…РѕСЂРѕС€Рѕ СЂР°Р±РѕС‚Р°РµС‚ РІ РЅРёС€Р°С…, РіРґРµ СЂРµР·СѓР»СЊС‚Р°С‚ СЌСЃС‚РµС‚РёС‡РµРЅ Рё РїСЂРёСЏС‚РµРЅ. РќР°РїСЂРёРјРµСЂ, РЅР° С‚Р°РєРѕР№ РєР°СЂС‚РёРЅРєРµ РґР»СЏ СЂРµРєР»Р°РјРЅРѕРіРѕ РїРѕСЃС‚Р° РјРѕРіСѓС‚ Р±С‹С‚СЊ С‡Р°СЃС‹ РЅР° СЂСѓРєРµ, РіР°СЂРјРѕРЅРёС‡РЅРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРЅС‹Рµ РІ РєР°РґСЂРµ. \r\nРљР°СЂС‚РёРЅРєР° СЃ С‚РµРєСЃС‚РѕРј. Р”РѕР»Р¶РЅР° РїРѕРїР°РґР°С‚СЊ РІ Р±РѕР»СЊ Р¦Рђ, РґР°РІР°С‚СЊ РєР°РєСѓСЋ-С‚Рѕ РёРЅС„РѕСЂРјР°С†РёСЋ, РѕС‚РІРµС‡Р°С‚СЊ РЅР° РІРѕРїСЂРѕСЃ РёР»Рё Р·Р°РґР°РІР°С‚СЊ РµРіРѕ. Р’ С‚Р°РєРёС… РєР°СЂС‚РёРЅРєР°С… РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ Р·Р°РіРѕР»РѕРІРѕРє Р±С‹Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РєСЂСѓРїРЅС‹Рј Рё РїСЂРёРІР»РµРєР°Р» РІРЅРёРјР°РЅРёРµ РІ РїРѕС‚РѕРєРµ РґСЂСѓРіРѕР№ РёРЅС„РѕСЂРјР°С†РёРё РІ Р»РµРЅС‚Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ.\r\nРњРµРјС‹. РќРµ РЅСѓР¶РЅРѕ РїРѕСЃС‚РёС‚СЊ С€Р°Р±Р»РѕРЅРЅС‹Рµ С€СѓС‚РєРё Р·Р° 300. РџСЂРµРґРїРѕС‡С‚РёС‚РµР»РµРЅ РѕСЂРёРіРёРЅР°Р»СЊРЅС‹Р№ СЋРјРѕСЂ, РїРѕРЅСЏС‚РЅС‹Р№ РІР°С€РµР№ Р°СѓРґРёС‚РѕСЂРёРё.",
         "preview_image": "blog/Screenshot_16.jpg",
         "created_at": "2024-07-06T04:06:09.080Z",
         "is_published": true,
@@ -24662,24 +24662,24 @@
     "model": "shop.category",
     "pk": 1,
     "fields": {
-        "name": "Овощи и овощные продукты",
-        "description": "Овощи и овощные продукты — категория продуктов"
+        "name": "РћРІРѕС‰Рё Рё РѕРІРѕС‰РЅС‹Рµ РїСЂРѕРґСѓРєС‚С‹",
+        "description": "РћРІРѕС‰Рё Рё РѕРІРѕС‰РЅС‹Рµ РїСЂРѕРґСѓРєС‚С‹ вЂ” РєР°С‚РµРіРѕСЂРёСЏ РїСЂРѕРґСѓРєС‚РѕРІ"
     }
 },
 {
     "model": "shop.category",
     "pk": 2,
     "fields": {
-        "name": "Молоко и молочные продукты",
-        "description": "Молоко и молочные продукты — категория продуктов"
+        "name": "РњРѕР»РѕРєРѕ Рё РјРѕР»РѕС‡РЅС‹Рµ РїСЂРѕРґСѓРєС‚С‹",
+        "description": "РњРѕР»РѕРєРѕ Рё РјРѕР»РѕС‡РЅС‹Рµ РїСЂРѕРґСѓРєС‚С‹ вЂ” РєР°С‚РµРіРѕСЂРёСЏ РїСЂРѕРґСѓРєС‚РѕРІ"
     }
 },
 {
     "model": "shop.product",
     "pk": 1,
     "fields": {
-        "name": "Молоко пастеризованное, 1л",
-        "description": "Пастеризованное молоко «Чистая линия» бережно хранит в себе всю пользу натурального коровьего молока. Это идеальный вариант для ежедневного употребления в чистом виде, а также для приготовления каши, выпечки или коктейлей. Уже через пару дней на молоке образуется слой вкуснейших натуральных сливок. А удобная бутылка с крышкой надёжно хранит продукт, не теряя ни капли драгоценного напитка. Марка «Чистая линия» предлагает всё самое лучшее для своих покупателей.",
+        "name": "РњРѕР»РѕРєРѕ РїР°СЃС‚РµСЂРёР·РѕРІР°РЅРЅРѕРµ, 1Р»",
+        "description": "РџР°СЃС‚РµСЂРёР·РѕРІР°РЅРЅРѕРµ РјРѕР»РѕРєРѕ В«Р§РёСЃС‚Р°СЏ Р»РёРЅРёСЏВ» Р±РµСЂРµР¶РЅРѕ С…СЂР°РЅРёС‚ РІ СЃРµР±Рµ РІСЃСЋ РїРѕР»СЊР·Сѓ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРіРѕ РєРѕСЂРѕРІСЊРµРіРѕ РјРѕР»РѕРєР°. Р­С‚Рѕ РёРґРµР°Р»СЊРЅС‹Р№ РІР°СЂРёР°РЅС‚ РґР»СЏ РµР¶РµРґРЅРµРІРЅРѕРіРѕ СѓРїРѕС‚СЂРµР±Р»РµРЅРёСЏ РІ С‡РёСЃС‚РѕРј РІРёРґРµ, Р° С‚Р°РєР¶Рµ РґР»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ РєР°С€Рё, РІС‹РїРµС‡РєРё РёР»Рё РєРѕРєС‚РµР№Р»РµР№. РЈР¶Рµ С‡РµСЂРµР· РїР°СЂСѓ РґРЅРµР№ РЅР° РјРѕР»РѕРєРµ РѕР±СЂР°Р·СѓРµС‚СЃСЏ СЃР»РѕР№ РІРєСѓСЃРЅРµР№С€РёС… РЅР°С‚СѓСЂР°Р»СЊРЅС‹С… СЃР»РёРІРѕРє. Рђ СѓРґРѕР±РЅР°СЏ Р±СѓС‚С‹Р»РєР° СЃ РєСЂС‹С€РєРѕР№ РЅР°РґС‘Р¶РЅРѕ С…СЂР°РЅРёС‚ РїСЂРѕРґСѓРєС‚, РЅРµ С‚РµСЂСЏСЏ РЅРё РєР°РїР»Рё РґСЂР°РіРѕС†РµРЅРЅРѕРіРѕ РЅР°РїРёС‚РєР°. РњР°СЂРєР° В«Р§РёСЃС‚Р°СЏ Р»РёРЅРёСЏВ» РїСЂРµРґР»Р°РіР°РµС‚ РІСЃС‘ СЃР°РјРѕРµ Р»СѓС‡С€РµРµ РґР»СЏ СЃРІРѕРёС… РїРѕРєСѓРїР°С‚РµР»РµР№.",
         "weight": "1.00",
         "image": "shop/Screenshot_17.jpg",
         "category": 2,
@@ -24694,8 +24694,8 @@
     "model": "shop.product",
     "pk": 2,
     "fields": {
-        "name": "Молоко цельное сгущенное с сахаром",
-        "description": "От сгущённого молока марки «Чистая линия» невозможно оторваться. Оно такое вкусное и нежное, что хочется есть его ложками. И каждый может себе это позволить, ведь в составе сгущёнки от «Чистой линии» нет загустителей и ароматизаторов. Только натуральное отборное молоко, сахароза и лактоза. Идеальный ингредиент для выпечки, продукт с насыщенным сливочным вкусом, прекрасно дополнит блинчики или сырники.",
+        "name": "РњРѕР»РѕРєРѕ С†РµР»СЊРЅРѕРµ СЃРіСѓС‰РµРЅРЅРѕРµ СЃ СЃР°С…Р°СЂРѕРј",
+        "description": "РћС‚ СЃРіСѓС‰С‘РЅРЅРѕРіРѕ РјРѕР»РѕРєР° РјР°СЂРєРё В«Р§РёСЃС‚Р°СЏ Р»РёРЅРёСЏВ» РЅРµРІРѕР·РјРѕР¶РЅРѕ РѕС‚РѕСЂРІР°С‚СЊСЃСЏ. РћРЅРѕ С‚Р°РєРѕРµ РІРєСѓСЃРЅРѕРµ Рё РЅРµР¶РЅРѕРµ, С‡С‚Рѕ С…РѕС‡РµС‚СЃСЏ РµСЃС‚СЊ РµРіРѕ Р»РѕР¶РєР°РјРё. Р РєР°Р¶РґС‹Р№ РјРѕР¶РµС‚ СЃРµР±Рµ СЌС‚Рѕ РїРѕР·РІРѕР»РёС‚СЊ, РІРµРґСЊ РІ СЃРѕСЃС‚Р°РІРµ СЃРіСѓС‰С‘РЅРєРё РѕС‚ В«Р§РёСЃС‚РѕР№ Р»РёРЅРёРёВ» РЅРµС‚ Р·Р°РіСѓСЃС‚РёС‚РµР»РµР№ Рё Р°СЂРѕРјР°С‚РёР·Р°С‚РѕСЂРѕРІ. РўРѕР»СЊРєРѕ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ РѕС‚Р±РѕСЂРЅРѕРµ РјРѕР»РѕРєРѕ, СЃР°С…Р°СЂРѕР·Р° Рё Р»Р°РєС‚РѕР·Р°. РРґРµР°Р»СЊРЅС‹Р№ РёРЅРіСЂРµРґРёРµРЅС‚ РґР»СЏ РІС‹РїРµС‡РєРё, РїСЂРѕРґСѓРєС‚ СЃ РЅР°СЃС‹С‰РµРЅРЅС‹Рј СЃР»РёРІРѕС‡РЅС‹Рј РІРєСѓСЃРѕРј, РїСЂРµРєСЂР°СЃРЅРѕ РґРѕРїРѕР»РЅРёС‚ Р±Р»РёРЅС‡РёРєРё РёР»Рё СЃС‹СЂРЅРёРєРё.",
         "weight": "250.00",
         "image": "shop/Screenshot_18.jpg",
         "category": 2,
@@ -24710,5 +24710,5 @@
     "model": "shop.product",
     "pk": 3,
     "fields": {
-        "name": "Сметана термостатная 20%",
+        "name": "РЎРјРµС‚Р°РЅР° С‚РµСЂРјРѕСЃС‚Р°С‚РЅР°СЏ 20%",
         "description": 

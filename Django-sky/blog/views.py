@@ -3,11 +3,15 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 import transliterate
 from django.urls import reverse_lazy
+from django.utils.decorators import method_decorator
 from django.utils.text import slugify
+from django.views.decorators.cache import never_cache
 from django.views.generic import DetailView, ListView, UpdateView, DeleteView, TemplateView, CreateView
 from django.core.exceptions import PermissionDenied
+from config.settings import CACHE_ENABLED
 
 from blog.models import Blog
+from blog.servises import get_blog_from_cache
 from blog.utils.mail_newsletter import congratulate_mail_newsletter
 
 
@@ -31,12 +35,24 @@ class BlogListView(ListView):
     model = Blog
     template_name = 'blog/blogpost_list.html'
     context_object_name = 'blog'
-    paginate_by = 3
+    paginate_by = 10
 
     def get_queryset(self):
+        # Проверяем наличие прав у пользователя
         if self.request.user.has_perm('blog.can_publish_post'):
+            if CACHE_ENABLED:
+                return get_blog_from_cache()
             return Blog.objects.all()
-        return Blog.objects.filter(is_published=True)
+        else:
+            # Для обычных пользователей используем только опубликованные посты
+            if CACHE_ENABLED:
+                blog_list = get_blog_from_cache()
+                return blog_list.filter(is_published=True)
+            return Blog.objects.filter(is_published=True)
+
+        # if self.request.user.has_perm('blog.can_publish_post'):
+        #     return Blog.objects.all()
+        # return Blog.objects.filter(is_published=True)
 
 
 class BlogCreateView(CreateView):
@@ -52,9 +68,14 @@ class BlogCreateView(CreateView):
     #         new_post.save()
     #     return super().form_valid(form)
 
+    @method_decorator(never_cache)
+    def dispatch(self, *args, **kwargs):
+        """Отключение кеша"""
+        return super().dispatch(*args, **kwargs)
+
     def form_valid(self, form):
         title = transliterate.slugify(form.cleaned_data['title'])
-        if self.model.objects.filter(title=title).exists():
+        if self.model.objects.filter(slug=title).exists():
             form.add_error('title', 'Пост с таким slug уже существует')
             return self.form_invalid(form=form)
 
@@ -87,7 +108,6 @@ class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
             messages.error(request, 'У вас нет прав для редактирования этого поста.')
             return redirect('blog:blogpost_list')
         return super().dispatch(request, *args, **kwargs)
-
 
     def form_valid(self, form):
         if form.is_valid():

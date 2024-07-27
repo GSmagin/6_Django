@@ -1,10 +1,15 @@
 from django.apps import AppConfig
+import time
 
 
 class MailingsConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'mailings'
     verbose_name = "Рассылки"
+
+
+
+
 
     # def ready(self):
     #     import mailings.management.commands.start_print

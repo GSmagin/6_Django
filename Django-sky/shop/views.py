@@ -3,6 +3,8 @@ from django.forms import inlineformset_factory, BaseInlineFormSet, ModelForm
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
+from django.views.decorators.cache import never_cache
+from django.utils.decorators import method_decorator
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -19,7 +21,7 @@ class ProductListView(ListView):
 
     def get_queryset(self):
         if self.request.user.groups.filter(name='Moderator_Product').exists() or self.request.user.groups.filter(
-                name='Admin').exists():
+                name='Admin').exists() or self.request.user.groups.filter(name='User_Product').exists():
             return Product.objects.all()
         return Product.objects.filter(is_published='published')
 
@@ -66,6 +68,11 @@ class ProductCreateView(CreateView):  # Переопределяем CreateView 
     template_name = 'shop/product_create.html'
     #    fields = ['name', 'description', 'price', 'weight', 'category', 'image']
     success_url = reverse_lazy('shop:product_list')
+
+    @method_decorator(never_cache)
+    def dispatch(self, *args, **kwargs):
+        """Отключение кеша"""
+        return super().dispatch(*args, **kwargs)
 
     def form_valid(self, form):
         form.instance.owner = self.request.user  # Устанавливаем текущего пользователя как владельца

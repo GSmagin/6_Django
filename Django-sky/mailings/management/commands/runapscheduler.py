@@ -7,7 +7,6 @@ from django.core.management import BaseCommand
 from django_apscheduler import util
 from django_apscheduler.jobstores import DjangoJobStore
 from django_apscheduler.models import DjangoJobExecution
-
 from mailings.utils import send_mails
 
 
