@@ -70,6 +70,7 @@ class BlogCreateView(CreateView):
 
     @method_decorator(never_cache)
     def dispatch(self, *args, **kwargs):
+        """Отключение кеша"""
         return super().dispatch(*args, **kwargs)
 
     def form_valid(self, form):
