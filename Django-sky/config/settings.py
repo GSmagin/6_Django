@@ -12,23 +12,9 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import configparser
 import os
 from pathlib import Path
+from dotenv import load_dotenv
 
-# Путь к текущему виртуальному окружению
-venv_path = os.environ['VIRTUAL_ENV']
-
-# Путь к файлу config.ini внутри виртуального окружения
-config_file_path = os.path.join(venv_path, 'config.ini')
-
-# [database]
-# NAME = db_django2
-# USER = postgres
-# PASSWORD = ''
-# HOST = 127.0.0.1
-# PORT = 5432
-
-# Объект конфигурации
-config = configparser.ConfigParser()
-config.read(config_file_path)
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-pzxits$*a%$0oz(8p)=mwcuekd+74o!9n!@3w3sd5%b28k54(='
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', False) == 'True'
 
 ALLOWED_HOSTS = ['*']
 
@@ -116,11 +102,11 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config.get('database', 'NAME'),
-        'USER': config.get('database', 'USER'),
-        'PASSWORD': config.get('database', 'PASSWORD'),
-        'HOST': config.get('database', 'HOST'),
-        'PORT': config.get('database', 'PORT'),
+        'NAME': os.getenv('NAME'),
+        'USER': os.getenv('USER'),
+        'PASSWORD': os.getenv('PASSWORD'),
+        'HOST': os.getenv('HOST'),
+        'PORT': os.getenv('PORT'),
     }
 }
 
@@ -196,14 +182,13 @@ APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-EMAIL_HOST = config.get('email', 'EMAIL_HOST')
-EMAIL_PORT = config.get('email', 'EMAIL_PORT')
-EMAIL_HOST_USER = config.get('email', 'EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config.get('email', 'EMAIL_HOST_PASSWORD')
-#EMAIL_USE_SSL = config.get('email', 'EMAIL_USE_SSL')
-EMAIL_USE_TLS = config.get('email', 'EMAIL_USE_TLS')
-#  RECIPIENT_LIST = config.get('email',)
-EMAIL_RECIPIENT = 'grog512new@mail.ru'
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+#EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL')
+EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', False) == 'True'
+EMAIL_RECIPIENT = os.getenv('EMAIL_RECIPIENT')
 
 # Email settings
 SERVER_EMAIL = EMAIL_HOST_USER
@@ -213,7 +198,7 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 AUTH_USER_MODEL = 'users.CustomUser'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
-PASSWORD_RESET_TIMEOUT = 3600
+PASSWORD_RESET_TIMEOUT = os.getenv('PASSWORD_RESET_TIMEOUT')
 
 # CRONJOBS = [
 #     ('*/5 * * * *', 'mailings.utils.print_time_job', f'>> {BASE_DIR}/scheduled_job.log')
@@ -224,14 +209,14 @@ if CACHE_ENABLED:
     CACHES = {
         "default": {
             "BACKEND": "django.core.cache.backends.redis.RedisCache",
-            "LOCATION": "redis://127.0.0.1:6379",
+            "LOCATION": os.getenv('REDIS_URL'),
             #  "TIMEOUT": 300  # Ручная регулировка времени жизни кеша в секундах, по умолчанию 300
         }
     }
 
-CACHE_MIDDLEWARE_ALIAS = 'default'
-CACHE_MIDDLEWARE_SECONDS = 60
-CACHE_MIDDLEWARE_KEY_PREFIX = 'DJ_'
+CACHE_MIDDLEWARE_ALIAS = os.getenv('CACHE_MIDDLEWARE_ALIAS')
+CACHE_MIDDLEWARE_SECONDS = os.getenv('CACHE_MIDDLEWARE_SECONDS')
+CACHE_MIDDLEWARE_KEY_PREFIX = os.getenv('CACHE_MIDDLEWARE_KEY_PREFIX')
 
 # LOGGING = {
 #     'version': 1,

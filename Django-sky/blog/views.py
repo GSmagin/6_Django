@@ -3,7 +3,9 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 import transliterate
 from django.urls import reverse_lazy
+from django.utils.decorators import method_decorator
 from django.utils.text import slugify
+from django.views.decorators.cache import never_cache
 from django.views.generic import DetailView, ListView, UpdateView, DeleteView, TemplateView, CreateView
 from django.core.exceptions import PermissionDenied
 from config.settings import CACHE_ENABLED
@@ -65,6 +67,10 @@ class BlogCreateView(CreateView):
     #         new_post.slug = slugify(new_post.title)
     #         new_post.save()
     #     return super().form_valid(form)
+
+    @method_decorator(never_cache)
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def form_valid(self, form):
         title = transliterate.slugify(form.cleaned_data['title'])

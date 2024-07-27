@@ -3,6 +3,8 @@ from django.forms import inlineformset_factory, BaseInlineFormSet, ModelForm
 from django.shortcuts import render
 from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy, reverse
+from django.views.decorators.cache import never_cache
+from django.utils.decorators import method_decorator
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -66,6 +68,10 @@ class ProductCreateView(CreateView):  # Переопределяем CreateView 
     template_name = 'shop/product_create.html'
     #    fields = ['name', 'description', 'price', 'weight', 'category', 'image']
     success_url = reverse_lazy('shop:product_list')
+
+    @method_decorator(never_cache)
+    def dispatch(self, *args, **kwargs):
+        return super().dispatch(*args, **kwargs)
 
     def form_valid(self, form):
         form.instance.owner = self.request.user  # Устанавливаем текущего пользователя как владельца
