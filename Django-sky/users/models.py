@@ -39,7 +39,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     last_login = models.DateTimeField(**NULLABLE, verbose_name='Дата последнего входа')
     is_staff = models.BooleanField(default=False, **NULLABLE, verbose_name='Пользователь')
     is_active = models.BooleanField(default=False, verbose_name='Пользователь активен')
-
     is_manager = models.BooleanField(default=False, blank=True, null=True, verbose_name='Менеджер')  # права менеджера
 
     objects = UserManager()
