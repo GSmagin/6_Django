@@ -41,6 +41,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=False, verbose_name='Пользователь активен')
     is_manager = models.BooleanField(default=False, blank=True, null=True, verbose_name='Менеджер')  # права менеджера
 
+
     objects = UserManager()
 
     USERNAME_FIELD = 'email'
